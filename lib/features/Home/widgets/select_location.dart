@@ -28,7 +28,7 @@ class _SelectLocationState extends State<SelectLocation> {
             ],
           ),
     
-          Text(val, style:TextStyles.title2Eventhub ,)
+          Text(val, style:TextStyles.title2Eventhub16 ,)
         ],
       ),
       

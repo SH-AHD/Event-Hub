@@ -47,7 +47,7 @@ class DrawerContent extends StatelessWidget {
           children: [
         SvgPic(img: AppAssets.proSvg),
         SizedBox(width: 10,),
-        Text("Upgrade Pro", style: TextStyles.title2Eventhub.copyWith(color: AppColors.secondaryColor),),
+        Text("Upgrade Pro", style: TextStyles.title2Eventhub16.copyWith(color: AppColors.secondaryColor),),
           ],
         ),
       ),
