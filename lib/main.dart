@@ -1,3 +1,4 @@
+import 'package:event_hub/core/styles/themes.dart';
 import 'package:event_hub/features/Home/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppThemes.lightTheme(),
       home:HomeScreen(),
     );
   }
