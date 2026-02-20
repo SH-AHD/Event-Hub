@@ -17,10 +17,21 @@ static const String downArrowSvg='assets/icons/down_arrow.svg';
 static const String searchSvg='assets/icons/search.svg';
 static const String drawerMenuSvg='assets/icons/drawer_menu.svg';
 static const String sportsSvg='assets/icons/sports.svg';
+static const String bellSvg='assets/icons/bell.svg';
+static const String artSvg='assets/icons/art.svg';
+static const String bookmarkSvg='assets/icons/bookMark.svg';
+static const String calendarSvg='assets/icons/calD.svg';
+static const String messageDSvg='assets/icons/messageD.svg';
+static const String userDSvg='assets/icons/userD.svg';
+static const String settingSvg='assets/icons/sett.svg';
+static const String contactSvg='assets/icons/contact.svg';
+static const String helpSvg='assets/icons/help.svg';
+static const String outSvg='assets/icons/out.svg';
 
 
 //imgs
 static const String inviteImg='assets/imgs/inviteImg.png';
+static const String mapViewImg='assets/imgs/MapView.png';
 
 
 }
