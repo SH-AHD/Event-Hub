@@ -1,6 +1,5 @@
 import 'package:event_hub/core/styles/themes.dart';
 import 'package:event_hub/features/Auth/Pages/sign_in.dart';
-import 'package:event_hub/features/Home/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
