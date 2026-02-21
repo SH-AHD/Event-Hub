@@ -14,14 +14,20 @@ class EventScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
       bottomNavigationBar: BuyTicketButton(),
-      body: Stack(
-        children: [
-          SingleChildScrollView(
-            child: Column(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const TopBar(img: AppAssets.eventimg),
+            Transform.translate(
+              offset: const Offset(0, -30),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: const InviteCard(),
+              ),
+            ),
+            Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const TopBar(img: AppAssets.eventimg),
-                const SizedBox(height: 50),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
@@ -131,9 +137,8 @@ class EventScreen extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          Positioned(top: 210, left: 20, right: 20, child: InviteCard()),
-        ],
+          ],
+        ),
       ),
     );
   }
