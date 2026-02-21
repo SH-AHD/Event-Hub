@@ -22,6 +22,7 @@ class AppAssets {
   static const String google = 'assets/icons/google.png';
   static const String facebook = 'assets/icons/facebook.png';
   static const String profile = 'assets/icons/Profile.png';
+  static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';

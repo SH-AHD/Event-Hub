@@ -4,6 +4,7 @@ import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
+import 'package:event_hub/features/Auth/Pages/reset_password.dart';
 import 'package:event_hub/features/Auth/Pages/sign_up.dart';
 import 'package:event_hub/features/Auth/widgets/custom__text_field.dart';
 import 'package:event_hub/features/Auth/widgets/custom_button.dart';
@@ -58,29 +59,29 @@ class _SignInState extends State<SignIn> {
                   Text('Remember Me', style: TextStyles.body3.copyWith()),
                   Spacer(),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      pushPage(context: context, newScreen: ResetPassword());
+                    },
                     child: Text('Forgot Password?', style: TextStyles.body3),
                   ),
                 ],
               ),
 
               SizedBox(height: 36),
-              SizedBox(
-                height: 58,
+              Container(
                 width: 271,
-                child: Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(0, 10),
-                        blurRadius: 35,
-                        spreadRadius: 0,
-                        color: Color(0xff5669FF).withValues(alpha: 0.25),
-                      ),
-                    ],
-                  ),
-                  child: MainButton(text: 'Sign in'),
+                height: 58,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(0, 10),
+                      blurRadius: 35,
+                      spreadRadius: 0,
+                      color: Color(0xff5669FF).withValues(alpha: 0.25),
+                    ),
+                  ],
                 ),
+                child: MainButton(text: 'Sign in'),
               ),
               SizedBox(height: 24),
               Text(
