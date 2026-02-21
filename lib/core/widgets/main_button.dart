@@ -3,7 +3,8 @@ import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
-  const MainButton({super.key, required this.text});
+  const MainButton({super.key, required this.text, this.onPressed});
+  final VoidCallback? onPressed;
   final String text;
   @override
   Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ class MainButton extends StatelessWidget {
 
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Stack(
         alignment: Alignment.center,
         children: [
