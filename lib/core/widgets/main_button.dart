@@ -3,9 +3,9 @@ import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
-  const MainButton({super.key, required this.text, this.onPressed});
-  final VoidCallback? onPressed;
+  const MainButton({super.key, required this.text, this.onPress});
   final String text;
+  final Function? onPress;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -15,7 +15,9 @@ class MainButton extends StatelessWidget {
 
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
-      onPressed: onPressed,
+      onPressed: () {
+        onPress?.call();
+      },
       child: Stack(
         alignment: Alignment.center,
         children: [
