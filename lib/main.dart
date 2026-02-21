@@ -11,11 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppThemes.lightTheme(),
       // home:HomeScreen(),
-      home:SignIn(),
+      home: SignIn(),
     );
   }
 }

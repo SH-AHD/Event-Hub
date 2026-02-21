@@ -41,30 +41,20 @@ class _SignInState extends State<SignUp> {
               SizedBox(height: 19),
               CustomPasswordField(hint: 'Confirm password'),
               SizedBox(height: 22),
-              SizedBox(
+              Container(
                 height: 58,
                 width: 271,
-                child: Container(
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(0, 10),
-                        blurRadius: 35,
-                        spreadRadius: 0,
-                        color: Color(0xff5669FF).withValues(alpha: 0.25),
-                      ),
-                    ],
-                  ),
-                  child: MainButton(
-                    text: 'Sign up',
-                    onPressed: () {
-                      pushReplacementPage(
-                        context: context,
-                        newScreen: HomeScreen(),
-                      );
-                    },
-                  ),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(0, 10),
+                      blurRadius: 35,
+                      spreadRadius: 0,
+                      color: Color(0xff5669FF).withValues(alpha: 0.25),
+                    ),
+                  ],
                 ),
+                child: MainButton(text: 'Sign up'),
               ),
               SizedBox(height: 24),
               Text(

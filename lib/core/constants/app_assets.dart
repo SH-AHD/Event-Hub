@@ -35,6 +35,7 @@ class AppAssets {
   static const String bookmark1Svg = 'assets/icons/bookmark1.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
+  static const String pinPutSvg = 'assets/icons/Profile.png';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
   static const String mapViewImg = 'assets/imgs/MapView.png';
