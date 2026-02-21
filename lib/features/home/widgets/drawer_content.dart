@@ -3,7 +3,7 @@ import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/constants/app_network_imgs.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
-import 'package:event_hub/features/Home/widgets/drawer_tab.dart';
+import 'package:event_hub/features/home/widgets/drawer_tab.dart';
 import 'package:flutter/material.dart';
 
 class DrawerContent extends StatelessWidget {

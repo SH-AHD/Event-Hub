@@ -1,8 +1,8 @@
 import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
-import 'package:event_hub/features/Home/data/events_model.dart';
-import 'package:event_hub/features/Home/widgets/event_card.dart';
+import 'package:event_hub/features/home/data/events_model.dart';
+import 'package:event_hub/features/home/widgets/event_card.dart';
 import 'package:event_hub/features/event/screen/event_screen.dart';
 import 'package:flutter/material.dart';
 

@@ -9,7 +9,7 @@ import 'package:event_hub/features/auth/Pages/sign_up.dart';
 import 'package:event_hub/features/auth/widgets/custom__text_field.dart';
 import 'package:event_hub/features/auth/widgets/custom_button.dart';
 import 'package:event_hub/features/auth/widgets/custom_password_field.dart';
-import 'package:event_hub/features/Home/screens/home_screen.dart';
+import 'package:event_hub/features/home/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {

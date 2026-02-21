@@ -1,5 +1,5 @@
 import 'package:event_hub/core/constants/app_network_imgs.dart';
-import 'package:event_hub/features/Home/widgets/cir_profile_pic.dart';
+import 'package:event_hub/features/home/widgets/cir_profile_pic.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePics extends StatelessWidget {
