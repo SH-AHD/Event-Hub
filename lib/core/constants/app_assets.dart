@@ -29,4 +29,35 @@ static const String collectivityImg='assets/imgs/collectivity.png';
 static const String internationalGalaImg='assets/imgs/international_gala.png';
 
 
+
+  //icons
+  static const String bellSvg = 'assets/icons/bell.svg';
+  static const String artSvg = 'assets/icons/art.svg';
+  static const String bookmarkSvg = 'assets/icons/bookMark.svg';
+  static const String calendarSvg = 'assets/icons/calD.svg';
+  static const String messageDSvg = 'assets/icons/messageD.svg';
+  static const String userDSvg = 'assets/icons/userD.svg';
+  static const String settingSvg = 'assets/icons/sett.svg';
+  static const String contactSvg = 'assets/icons/contact.svg';
+  static const String helpSvg = 'assets/icons/help.svg';
+  static const String outSvg = 'assets/icons/out.svg';
+  static const String mail = 'assets/icons/Mail.png';
+  static const String password = 'assets/icons/Password.png';
+  static const String passwordEye = 'assets/icons/passwordEye.png';
+  static const String google = 'assets/icons/google.png';
+  static const String facebook = 'assets/icons/facebook.png';
+  static const String profile = 'assets/icons/Profile.png';
+  static const String bookmark1Svg = 'assets/icons/bookmark1.svg';
+  static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
+  static const String locationevSvg = 'assets/icons/LocationEv.svg';
+  static const String pinPutSvg = 'assets/icons/Profile.png';
+  //imgs
+  static const String mapViewImg = 'assets/imgs/MapView.png';
+  static const String eventHubImg = 'assets/imgs/EventHubImg.png';
+  static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
+  static const String eventimg = 'assets/imgs/eventimg.png';
+  static const String artistSvg = 'assets/imgs/artist.svg';
+  static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
+  static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
+  static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
 }
