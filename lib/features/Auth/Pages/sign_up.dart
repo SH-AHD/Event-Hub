@@ -87,7 +87,7 @@ class _SignInState extends State<SignUp> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Don’t have an account? ', style: TextStyles.body2),
+                    Text('Don’t have an account? ', style: TextStyles.body2.copyWith(color:AppColors.titleColor)),
                     Text(
                       'Signin',
                       style: TextStyles.body2.copyWith(

@@ -1,3 +1,4 @@
+import 'package:event_hub/core/styles/themes.dart';
 import 'package:event_hub/features/Auth/Pages/sign_in.dart';
 import 'package:flutter/material.dart';
 
@@ -11,12 +12,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SignIn(), // Scaffold(
-      //   body: Center(
-      //     child: Text('Hello Event Hub Team!'),
-      //   ),
-      // ),
-      theme: ThemeData(fontFamily: 'Airbnb'),
+      debugShowCheckedModeBanner: false,
+      theme: AppThemes.lightTheme(),
+      // home:HomeScreen(),
+      home: SignIn(),
     );
   }
 }

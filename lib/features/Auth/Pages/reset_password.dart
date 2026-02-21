@@ -1,4 +1,5 @@
 import 'package:event_hub/core/constants/app_assets.dart';
+import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
@@ -34,7 +35,7 @@ class _ResetPasswordState extends State<ResetPassword> {
               SizedBox(height: 12),
               Text(
                 'Please enter your email address to\nrequest a password reset',
-                style: TextStyles.body2,
+                style: TextStyles.body2.copyWith(color: AppColors.titleColor),
               ),
               SizedBox(height: 26),
               CustomTextField(

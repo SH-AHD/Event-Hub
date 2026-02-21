@@ -9,7 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_svg: ^2.2.3
+  flutter_svg: ^2.2.3  
+  flutter_zoom_drawer: ^3.2.0
   pinput: ^6.0.2
 
 dev_dependencies:
@@ -25,7 +26,7 @@ flutter:
     - assets/icons/
 
   fonts:
-    - family: Airbnb
+    - family: AirbnbCereal
       fonts:
         - asset: assets/fonts/AirbnbCereal_W_Bk.otf
           weight: 400

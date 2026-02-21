@@ -33,7 +33,7 @@ class _VerificationState extends State<Verification> {
             SizedBox(height: 12),
             Text(
               'Please enter your email address to\nrequest a password reset',
-              style: TextStyles.body2,
+              style: TextStyles.body2.copyWith(color: AppColors.titleColor),
             ),
             SizedBox(height: 26),
             Pinput(
