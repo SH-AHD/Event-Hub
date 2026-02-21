@@ -1,8 +1,9 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/event_card.dart';
-import 'package:event_hub/features/Home/data/data_model.dart';
+import 'package:event_hub/features/Home/Screens/search/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -49,19 +50,26 @@ class _SearchScreenState extends State<SearchScreen> {
                   ),
                 ),
                 Spacer(),
-                Container(
-                  padding: EdgeInsets.all(4),
-                  decoration: BoxDecoration(
-                    color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.transparent),
-                  ),
-                  child: Row(
-                    children: [
-                      SvgPicture.asset(AppAssets.filterSvg,color: AppColors.whiteColor,),
-                        SizedBox(width: 4,),
-                      Text('Filters ',style: TextStyles.subTitle2.copyWith(color: AppColors.whiteColor),),
-                    ],
+                InkWell(
+                  onTap: () {
+                   setState(() {
+                     pushPage(context: context, newScreen: FilterScreen());
+                   });
+                  },
+                  child: Container(
+                    padding: EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      color: AppColors.primaryColor,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.transparent),
+                    ),
+                    child: Row(
+                      children: [
+                        SvgPicture.asset(AppAssets.filterSvg,color: AppColors.whiteColor,),
+                          SizedBox(width: 4,),
+                        Text('Filters ',style: TextStyles.subTitle2.copyWith(color: AppColors.whiteColor),),
+                      ],
+                    ),
                   ),
                 ),
                 // FilterChip(label: Text('data'), onSelected: (bool selected) {}),

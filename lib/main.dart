@@ -1,4 +1,4 @@
-import 'package:event_hub/features/Home/Screens/search_screen.dart';
+import 'package:event_hub/features/Home/Screens/search/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
