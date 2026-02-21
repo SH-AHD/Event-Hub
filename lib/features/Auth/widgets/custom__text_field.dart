@@ -8,14 +8,16 @@ class CustomTextField extends StatelessWidget {
     this.prefix,
     required this.hint,
     this.radius = 12,
+    this.keyboard,
   });
   final String? prefix;
   final String hint;
   final double radius;
-
+  final TextInputType? keyboard;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: keyboard == null ? null : keyboard,
       decoration: InputDecoration(
         prefixIcon: prefix == null ? null : Image.asset(prefix!),
         hint: Text(

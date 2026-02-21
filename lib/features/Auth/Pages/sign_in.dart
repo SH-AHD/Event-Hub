@@ -4,6 +4,7 @@ import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
+import 'package:event_hub/features/Auth/Pages/reset_password.dart';
 import 'package:event_hub/features/Auth/Pages/sign_up.dart';
 import 'package:event_hub/features/Auth/widgets/custom__text_field.dart';
 import 'package:event_hub/features/Auth/widgets/custom_button.dart';
@@ -59,12 +60,14 @@ class _SignInState extends State<SignIn> {
                     Text('Remember Me', style: TextStyles.body3.copyWith()),
                     Spacer(),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        pushPage(context: context, newScreen: ResetPassword());
+                      },
                       child: Text('Forgot Password?', style: TextStyles.body3),
                     ),
                   ],
                 ),
-            
+
                 SizedBox(height: 36),
                 SizedBox(
                   height: 58,
@@ -116,7 +119,12 @@ class _SignInState extends State<SignIn> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Already have an account? ', style: TextStyles.body2.copyWith(color:AppColors.titleColor) ),
+                      Text(
+                        'Already have an account? ',
+                        style: TextStyles.body2.copyWith(
+                          color: AppColors.titleColor,
+                        ),
+                      ),
                       Text(
                         'Sign up',
                         style: TextStyles.body2.copyWith(
