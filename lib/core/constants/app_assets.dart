@@ -16,6 +16,16 @@ class AppAssets {
   static const String searchSvg = 'assets/icons/search.svg';
   static const String drawerMenuSvg = 'assets/icons/drawer_menu.svg';
   static const String sportsSvg = 'assets/icons/sports.svg';
+static const String bellSvg='assets/icons/bell.svg';
+static const String artSvg='assets/icons/art.svg';
+static const String bookmarkSvg='assets/icons/bookMark.svg';
+static const String calendarSvg='assets/icons/calD.svg';
+static const String messageDSvg='assets/icons/messageD.svg';
+static const String userDSvg='assets/icons/userD.svg';
+static const String settingSvg='assets/icons/sett.svg';
+static const String contactSvg='assets/icons/contact.svg';
+static const String helpSvg='assets/icons/help.svg';
+static const String outSvg='assets/icons/out.svg';
   static const String mail = 'assets/icons/Mail.png';
   static const String password = 'assets/icons/Password.png';
   static const String passwordEye = 'assets/icons/passwordEye.png';
@@ -27,6 +37,7 @@ class AppAssets {
   static const String locationev = 'assets/icons/LocationEv.png';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
+static const String mapViewImg='assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
   static const String eventimg = 'assets/imgs/eventimg.png';
