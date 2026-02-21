@@ -32,6 +32,9 @@ class AppAssets {
   static const String google = 'assets/icons/google.png';
   static const String facebook = 'assets/icons/facebook.png';
   static const String profile = 'assets/icons/Profile.png';
+  static const String bookmark1Svg = 'assets/icons/bookmark1.svg';
+  static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
+  static const String locationevSvg = 'assets/icons/LocationEv.svg';
   static const String pinPutSvg = 'assets/icons/Profile.png';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
@@ -39,7 +42,7 @@ class AppAssets {
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
   static const String eventimg = 'assets/imgs/eventimg.png';
-  static const String orgnaizer = 'assets/imgs/orgnaizer.png';
+  static const String artistSvg = 'assets/imgs/artist.svg';
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';

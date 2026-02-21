@@ -9,6 +9,7 @@ import 'package:event_hub/features/Auth/Pages/sign_up.dart';
 import 'package:event_hub/features/Auth/widgets/custom__text_field.dart';
 import 'package:event_hub/features/Auth/widgets/custom_button.dart';
 import 'package:event_hub/features/Auth/widgets/custom_password_field.dart';
+import 'package:event_hub/features/Home/Screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -83,7 +84,15 @@ class _SignInState extends State<SignIn> {
                         ),
                       ],
                     ),
-                    child: MainButton(text: 'Sign in'),
+                    child: MainButton(
+                      text: 'Sign in',
+                      onPressed: () {
+                        pushReplacementPage(
+                          context: context,
+                          newScreen: HomeScreen(),
+                        );
+                      },
+                    ),
                   ),
                 ),
                 SizedBox(height: 24),

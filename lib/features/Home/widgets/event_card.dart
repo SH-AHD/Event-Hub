@@ -9,12 +9,13 @@ import 'package:event_hub/features/Home/widgets/profile_pics.dart';
 import 'package:flutter/material.dart';
 
 class EventCard extends StatelessWidget {
-  const EventCard({super.key, required this.model});
+  const EventCard({super.key, required this.model, this.onpressed});
   final EventsModel model;
+  final VoidCallback? onpressed;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onpressed,
       child: Container(
         width: 270,
         height: 260,
@@ -74,10 +75,7 @@ class EventCard extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               children: [
-                 SvgPic(
-                  img: AppAssets.mapSvg,
-                  color: AppColors.lightGrayColor,
-                ),
+                SvgPic(img: AppAssets.mapSvg, color: AppColors.lightGrayColor),
                 Text(
                   model.address,
                   maxLines: 1,
