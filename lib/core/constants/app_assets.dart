@@ -34,14 +34,14 @@ class AppAssets {
   static const String profile = 'assets/icons/Profile.png';
   static const String bookmark1Svg = 'assets/icons/bookmark1.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
-  static const String locationev = 'assets/icons/LocationEv.png';
+  static const String locationevSvg = 'assets/icons/LocationEv.svg';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
   static const String eventimg = 'assets/imgs/eventimg.png';
-  static const String orgnaizer = 'assets/imgs/orgnaizer.png';
+  static const String artistSvg = 'assets/imgs/artist.svg';
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';

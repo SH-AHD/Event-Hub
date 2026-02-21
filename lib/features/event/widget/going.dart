@@ -1,5 +1,7 @@
+import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/constants/app_network_imgs.dart';
 import 'package:event_hub/features/event/widget/circ.dart';
+import 'package:event_hub/features/event/widget/invite.dart';
 import 'package:flutter/material.dart';
 
 class InviteCard extends StatelessWidget {
@@ -13,6 +15,13 @@ class InviteCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(30),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: Offset(0, 5),
+          ),
+        ],
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -47,14 +56,22 @@ class InviteCard extends StatelessWidget {
                 "+20 Going",
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color: Colors.blue,
+                  color: AppColors.primaryColor,
                 ),
               ),
             ],
           ),
           SizedBox(width: 20),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                backgroundColor: AppColors.headLineColor.withOpacity(0.5),
+                builder: (context) => const InviteFriendsSheet(),
+              );
+            },
+
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFF6366F1),
               foregroundColor: Colors.white,
