@@ -59,6 +59,14 @@ fontSize: 18,
 color: AppColors.whiteColor,
 fontFamily: AppFonts.airbnbCereal,
 );
+static const TextStyle title1ScreensEventhub  =TextStyle(
+fontSize: 24,
+fontWeight: FontWeight.w400,
+);
+static const TextStyle subTitle3  =TextStyle(
+fontSize: 12,color: AppColors.primaryColor,
+fontWeight: FontWeight.w400,
+);
 
 static  TextStyle subTitle2 =TextStyle(
 fontSize: 15,
