@@ -21,6 +21,12 @@ static const String sportsSvg='assets/icons/sports.svg';
 
 //imgs
 static const String inviteImg='assets/imgs/inviteImg.png';
+static const String joMelanoImg='assets/imgs/jo_melano.png';
+static const String virtualEveningImg='assets/imgs/virtual_evening.png'; 
+static const String womensImg='assets/imgs/womens.png';
+static const String internationalKidsImg='assets/imgs/international_kids.png';
+static const String collectivityImg='assets/imgs/collectivity.png';
+static const String internationalGalaImg='assets/imgs/international_gala.png';
 
 
 }
