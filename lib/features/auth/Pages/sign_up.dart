@@ -1,12 +1,10 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
-import 'package:event_hub/features/Auth/widgets/custom__text_field.dart';
-import 'package:event_hub/features/Auth/widgets/custom_button.dart';
-import 'package:event_hub/features/Auth/widgets/custom_password_field.dart';
-import 'package:event_hub/features/Home/Screens/home_screen.dart';
+import 'package:event_hub/features/auth/widgets/custom__text_field.dart';
+import 'package:event_hub/features/auth/widgets/custom_button.dart';
+import 'package:event_hub/features/auth/widgets/custom_password_field.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {

@@ -3,8 +3,8 @@ import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
-import 'package:event_hub/features/Auth/Pages/verification.dart';
-import 'package:event_hub/features/Auth/widgets/custom__text_field.dart';
+import 'package:event_hub/features/auth/Pages/verification.dart';
+import 'package:event_hub/features/auth/widgets/custom__text_field.dart';
 import 'package:flutter/material.dart';
 
 class ResetPassword extends StatefulWidget {

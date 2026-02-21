@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SearchScreen extends StatefulWidget {
-   SearchScreen( {super.key});
+   const SearchScreen( {super.key});
  
 
   @override
