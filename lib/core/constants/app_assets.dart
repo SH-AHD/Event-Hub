@@ -32,9 +32,17 @@ static const String outSvg='assets/icons/out.svg';
   static const String google = 'assets/icons/google.png';
   static const String facebook = 'assets/icons/facebook.png';
   static const String profile = 'assets/icons/Profile.png';
+  static const String bookmark = 'assets/icons/bookmark.svg';
+  static const String calendarev = 'assets/icons/CalendarEv.svg';
+  static const String locationev = 'assets/icons/LocationEv.png';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
 static const String mapViewImg='assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
+  static const String eventimg = 'assets/imgs/eventimg.png';
+  static const String orgnaizer = 'assets/imgs/orgnaizer.png';
+  static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
+  static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
+  static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
 }
