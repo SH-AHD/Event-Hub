@@ -23,86 +23,88 @@ class _SignInState extends State<SignUp> {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Column(
-            children: [
-              SizedBox(height: 20),
-              Align(
-                alignment: Alignment.centerLeft,
-                child: Text('Sign up', style: TextStyles.h4EventHub),
-              ),
-              SizedBox(height: 21),
-              CustomTextField(hint: 'Full name', prefix: AppAssets.profile),
-              SizedBox(height: 21),
-              CustomTextField(hint: 'abc@email.com', prefix: AppAssets.mail),
-              SizedBox(height: 19),
-              CustomPasswordField(hint: 'Your password'),
-              SizedBox(height: 19),
-              CustomPasswordField(hint: 'Confirm password'),
-              SizedBox(height: 22),
-              Container(
-                height: 58,
-                width: 271,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(0, 10),
-                      blurRadius: 35,
-                      spreadRadius: 0,
-                      color: Color(0xff5669FF).withValues(alpha: 0.25),
-                    ),
-                  ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text('Sign up', style: TextStyles.h4EventHub),
                 ),
-                child: MainButton(text: 'Sign up'),
-              ),
-              SizedBox(height: 24),
-              Text(
-                'OR',
-                style: TextStyles.title2Eventhub.copyWith(
-                  color: AppColors.grayColor,
-                ),
-              ),
-              SizedBox(height: 5),
-              SizedBox(
-                height: 58,
-                width: 273,
-                child: CustomButton(
-                  imageAsset: AppAssets.google,
-                  text: 'Login with Google',
-                ),
-              ),
-              SizedBox(height: 17),
-              SizedBox(
-                height: 58,
-                width: 273,
-                child: CustomButton(
-                  imageAsset: AppAssets.facebook,
-                  text: 'Login with Facebook',
-                ),
-              ),
-              SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pop(context);
-                },
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Don’t have an account? ',
-                      style: TextStyles.body2.copyWith(
-                        color: AppColors.titleColor,
+                SizedBox(height: 21),
+                CustomTextField(hint: 'Full name', prefix: AppAssets.profile),
+                SizedBox(height: 21),
+                CustomTextField(hint: 'abc@email.com', prefix: AppAssets.mail),
+                SizedBox(height: 19),
+                CustomPasswordField(hint: 'Your password'),
+                SizedBox(height: 19),
+                CustomPasswordField(hint: 'Confirm password'),
+                SizedBox(height: 22),
+                Container(
+                  height: 58,
+                  width: 271,
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        offset: Offset(0, 10),
+                        blurRadius: 35,
+                        spreadRadius: 0,
+                        color: Color(0xff5669FF).withValues(alpha: 0.25),
                       ),
-                    ),
-                    Text(
-                      'Signin',
-                      style: TextStyles.body2.copyWith(
-                        color: AppColors.primaryColor,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
+                  child: MainButton(text: 'Sign up'),
                 ),
-              ),
-            ],
+                SizedBox(height: 24),
+                Text(
+                  'OR',
+                  style: TextStyles.title2Eventhub.copyWith(
+                    color: AppColors.grayColor,
+                  ),
+                ),
+                SizedBox(height: 5),
+                SizedBox(
+                  height: 58,
+                  width: 273,
+                  child: CustomButton(
+                    imageAsset: AppAssets.google,
+                    text: 'Login with Google',
+                  ),
+                ),
+                SizedBox(height: 17),
+                SizedBox(
+                  height: 58,
+                  width: 273,
+                  child: CustomButton(
+                    imageAsset: AppAssets.facebook,
+                    text: 'Login with Facebook',
+                  ),
+                ),
+                SizedBox(height: 20),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Don’t have an account? ',
+                        style: TextStyles.body2.copyWith(
+                          color: AppColors.titleColor,
+                        ),
+                      ),
+                      Text(
+                        'Signin',
+                        style: TextStyles.body2.copyWith(
+                          color: AppColors.primaryColor,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
