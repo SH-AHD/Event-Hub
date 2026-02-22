@@ -18,7 +18,7 @@ class BuyTicketButton extends StatelessWidget {
           ),
         ),
         child: const Text(
-          "Buy Ticket 120\$",
+          "Buy Ticket 250 EGP",
           style: TextStyle(
             fontSize: 18,
             color: AppColors.whiteColor,

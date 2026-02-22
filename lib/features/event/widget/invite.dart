@@ -1,15 +1,21 @@
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/core/constants/app_network_imgs.dart';
-import 'package:event_hub/features/event/widget/circ.dart';
+import 'package:event_hub/features/event/widget/listinvite.dart';
 import 'package:flutter/material.dart';
 
-class InviteFriendsSheet extends StatelessWidget {
+class InviteFriendsSheet extends StatefulWidget {
   const InviteFriendsSheet({super.key});
+
+  @override
+  State<InviteFriendsSheet> createState() => _InviteFriendsSheetState();
+}
+
+class _InviteFriendsSheetState extends State<InviteFriendsSheet> {
+  bool isSelected = false;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.75,
+      height: MediaQuery.of(context).size.height * 0.90,
       decoration: const BoxDecoration(
         color: AppColors.whiteColor,
         borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
@@ -43,6 +49,9 @@ class InviteFriendsSheet extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextField(
                   decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
                     hintText: "Search",
                     prefixIcon: const Icon(Icons.search),
                     border: OutlineInputBorder(
@@ -50,22 +59,21 @@ class InviteFriendsSheet extends StatelessWidget {
                       borderSide: BorderSide.none,
                     ),
                     filled: true,
-                    fillColor: AppColors.lightGrayColor.withOpacity(0.3),
+                    fillColor: AppColors.whiteColor.withOpacity(0.3),
                   ),
                 ),
               ),
 
               Expanded(
                 child: ListView.builder(
-                  itemCount: 10,
+                  itemCount: followers.length,
                   itemBuilder: (context, index) {
-                    return ListTile(
-                      leading: const CircleAvatar(
-                        child: CirProfilePic1(img: AppNetworkImgs.imgProf2),
-                      ),
-                      title: const Text("Alex Lee"),
-                      subtitle: const Text("200 Followers"),
-                      trailing: Icon(Icons.person_add, color: Colors.blue),
+                    final item = followers[index];
+
+                    return FollowerItem(
+                      image: item["image"],
+                      name: item["name"],
+                      followers: item["followers"],
                     );
                   },
                 ),
@@ -80,7 +88,7 @@ class InviteFriendsSheet extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () => Navigator.pop(context),
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xFF5669FF),
+                backgroundColor: AppColors.primaryColor,
                 minimumSize: const Size(double.infinity, 55),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -92,7 +100,7 @@ class InviteFriendsSheet extends StatelessWidget {
                   Text(
                     "INVITE",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: AppColors.whiteColor,
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),

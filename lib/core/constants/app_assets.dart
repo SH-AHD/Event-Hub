@@ -16,6 +16,8 @@ class AppAssets {
   static const String searchSvg = 'assets/icons/search.svg';
   static const String drawerMenuSvg = 'assets/icons/drawer_menu.svg';
   static const String sportsSvg = 'assets/icons/sports.svg';
+  static const String selectSvg = 'assets/icons/Select.svg';
+  static const String nonselectSvg = 'assets/icons/No-Select.svg';
 
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';

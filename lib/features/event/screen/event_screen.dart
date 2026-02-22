@@ -1,11 +1,11 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/features/event/widget/artist.dart';
 import 'package:event_hub/features/event/widget/event_top.dart';
 import 'package:event_hub/features/event/widget/going.dart';
 import 'package:event_hub/features/event/widget/buyticketbutton.dart';
 import 'package:event_hub/features/event/widget/buildInfoRow.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 class EventScreen extends StatelessWidget {
   const EventScreen({super.key});
@@ -56,64 +56,7 @@ class EventScreen extends StatelessWidget {
                       ),
 
                       const SizedBox(height: 20),
-                      ListTile(
-                        contentPadding: EdgeInsets.zero,
-                        leading: Container(
-                          width: 52,
-                          height: 52,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: AppColors.buttonArrowBackground,
-                              width: 2.0,
-                            ),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(2.0),
-                            child: ClipOval(
-                              child: Container(
-                                color: AppColors.lightGrayColor,
-                                child: SvgPicture.asset(
-                                  AppAssets.artistSvg,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        title: const Text(
-                          "Marwan Pablo",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                        subtitle: const Text(
-                          "Artist",
-                          style: TextStyle(
-                            color: AppColors.grayColor,
-                            fontSize: 13,
-                          ),
-                        ),
-                        trailing: SizedBox(
-                          height: 35,
-                          child: TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              backgroundColor: AppColors.buttonArrowBackground
-                                  .withOpacity(0.1)
-                                  .withOpacity(0.1),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                            ),
-                            child: const Text(
-                              "Follow",
-                              style: TextStyle(color: Color(0xFF5669FF)),
-                            ),
-                          ),
-                        ),
-                      ),
+                      Artist(),
                       const SizedBox(height: 20),
                       const Text(
                         "About Event",
