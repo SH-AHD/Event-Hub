@@ -1,10 +1,10 @@
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/features/Home/data/events_model.dart';
-import 'package:event_hub/features/Home/widgets/add_event_floating_button.dart';
-import 'package:event_hub/features/Home/widgets/event_section.dart';
-import 'package:event_hub/features/Home/widgets/header.dart';
-import 'package:event_hub/features/Home/widgets/invite_card.dart';
-import 'package:event_hub/features/Home/widgets/nav_bar.dart';
+import 'package:event_hub/features/home/data/events_model.dart';
+import 'package:event_hub/features/home/widgets/add_event_floating_button.dart';
+import 'package:event_hub/features/home/widgets/event_section.dart';
+import 'package:event_hub/features/home/widgets/header.dart';
+import 'package:event_hub/features/home/widgets/invite_card.dart';
+import 'package:event_hub/features/home/widgets/nav_bar.dart';
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 

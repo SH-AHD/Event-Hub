@@ -1,7 +1,7 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
-import 'package:event_hub/features/Home/widgets/notification.dart';
-import 'package:event_hub/features/Home/widgets/select_location.dart';
+import 'package:event_hub/features/home/widgets/notification.dart';
+import 'package:event_hub/features/home/widgets/select_location.dart';
 import 'package:flutter/material.dart' hide Notification;
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 

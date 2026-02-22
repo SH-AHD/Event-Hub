@@ -1,6 +1,6 @@
 import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
-import 'package:event_hub/features/Home/data/data_model.dart';
+import 'package:event_hub/features/home/data/data_model.dart';
 import 'package:flutter/material.dart';
 
 class event_card extends StatelessWidget {

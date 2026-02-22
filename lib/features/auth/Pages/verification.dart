@@ -25,14 +25,14 @@ class _VerificationState extends State<Verification> {
           children: [
             SizedBox(height: 20),
             Text(
-              'Resset Password',
+              'Verification',
               style: TextStyles.h4EventHub.copyWith(
                 fontWeight: FontWeight.w500,
               ),
             ),
             SizedBox(height: 12),
             Text(
-              'Please enter your email address to\nrequest a password reset',
+              'We’ve send you the verification\ncode on +1 2620 0323 7631',
               style: TextStyles.body2.copyWith(color: AppColors.titleColor),
             ),
             SizedBox(height: 26),
@@ -72,7 +72,10 @@ class _VerificationState extends State<Verification> {
             ),
             SizedBox(height: 24),
             Center(
-              child: Text('Re-send code in  0:20', style: TextStyles.body2),
+              child: Text(
+                'Re-send code in  0:20',
+                style: TextStyles.body2.copyWith(color: AppColors.titleColor),
+              ),
             ),
           ],
         ),
