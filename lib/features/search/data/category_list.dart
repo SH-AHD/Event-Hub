@@ -15,5 +15,5 @@ class CategoryModel {
   CategoryModel(category: "Food", icon: AppAssets.foodSvg,color: Colors.transparent),
   CategoryModel(category: "Food", icon: AppAssets.foodSvg,color: Colors.transparent),
   CategoryModel(category: "Sports", icon: AppAssets.sportsSvg,color: Colors.transparent),
-  CategoryModel(category: "Art", icon: AppAssets.artSvg,color: Colors.transparent),
+  CategoryModel(category: "Art", icon: AppAssets.art,color: Colors.transparent),
 ];

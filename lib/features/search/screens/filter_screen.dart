@@ -129,7 +129,7 @@ class _FilterScreenState extends State<FilterScreen> {
                     child: Center(
                       child: Text(
                         'RESET',
-                        style: TextStyles.button.copyWith(
+                        style: TextStyles.button2.copyWith(
                           color: AppColors.titleColor,
                         ),
                       ),
@@ -152,7 +152,7 @@ class _FilterScreenState extends State<FilterScreen> {
                       child: Center(
                         child: Text(
                           'APPLY',
-                          style: TextStyles.button.copyWith(
+                          style: TextStyles.button2.copyWith(
                             color: AppColors.whiteColor,
                           ),
                         ),

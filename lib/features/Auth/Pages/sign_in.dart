@@ -86,7 +86,7 @@ class _SignInState extends State<SignIn> {
                     ),
                     child: MainButton(
                       text: 'Sign in',
-                      onPressed: () {
+                      onPress: () {
                         pushReplacementPage(
                           context: context,
                           newScreen: HomeScreen(),
