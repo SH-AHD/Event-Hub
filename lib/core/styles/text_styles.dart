@@ -22,7 +22,14 @@ static const TextStyle subTitle2  =TextStyle(
 fontSize: 12,color: AppColors.primaryColor,
 fontWeight: FontWeight.w400,
 );
-
+static const TextStyle mainBody  =TextStyle(
+fontSize: 16,
+fontWeight: FontWeight.w400,
+);
+static const TextStyle button  =TextStyle(
+fontSize: 16,
+fontWeight: FontWeight.w500,
+);
 static const TextStyle body3 =TextStyle(
 fontSize: 14,
 fontWeight: FontWeight.w400,

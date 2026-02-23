@@ -3,7 +3,7 @@ import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/event_card.dart';
-import 'package:event_hub/features/Home/Screens/search/screens/filter_screen.dart';
+import 'package:event_hub/features/search/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -32,7 +32,7 @@ class _SearchScreenState extends State<SearchScreen> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            Row(mainAxisSize: MainAxisSize.min,
+            Row(
               children: [
                 IntrinsicWidth(
                   child: TextFormField(
@@ -53,7 +53,19 @@ class _SearchScreenState extends State<SearchScreen> {
                 InkWell(
                   onTap: () {
                    setState(() {
-                     pushPage(context: context, newScreen: FilterScreen());
+                     showModalBottomSheet(
+                       context: context,
+                       isScrollControlled: true,
+                       useSafeArea: true,
+                       backgroundColor: AppColors.whiteColor,
+                       shape: const RoundedRectangleBorder(
+                       borderRadius: BorderRadius.only(
+                         topLeft: Radius.circular(38),
+                         topRight: Radius.circular(38),
+                       ),
+                       ),
+                       builder: (context) => FilterScreen(),
+                     );
                    });
                   },
                   child: Container(

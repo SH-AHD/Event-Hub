@@ -18,6 +18,9 @@ static const String searchSvg='assets/icons/search.svg';
 static const String drawerMenuSvg='assets/icons/drawer_menu.svg';
 static const String sportsSvg='assets/icons/sports.svg';
 static const String artSvg='assets/icons/art.svg';
+static const String calandar='assets/icons/Calendar.svg';
+static const String locationfilter='assets/icons/LocationFilter.svg';
+static const String slider='assets/icons/Slider.svg';
 
 
 //imgs
