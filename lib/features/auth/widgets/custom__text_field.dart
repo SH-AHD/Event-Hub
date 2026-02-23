@@ -17,7 +17,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType: keyboard == null ? null : keyboard,
+      keyboardType: keyboard,
       decoration: InputDecoration(
         prefixIcon: prefix == null ? null : Image.asset(prefix!),
         hint: Text(

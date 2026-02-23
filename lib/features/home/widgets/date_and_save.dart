@@ -1,5 +1,5 @@
-import 'package:event_hub/features/Home/widgets/event_date.dart';
-import 'package:event_hub/features/Home/widgets/save_button.dart';
+import 'package:event_hub/features/home/widgets/event_date.dart';
+import 'package:event_hub/features/home/widgets/save_button.dart';
 import 'package:flutter/material.dart';
 
 class DateAndSave extends StatelessWidget {

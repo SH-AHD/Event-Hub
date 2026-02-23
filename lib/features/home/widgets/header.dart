@@ -1,7 +1,7 @@
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/features/Home/widgets/cat_tabs.dart';
-import 'package:event_hub/features/Home/widgets/header_row.dart';
-import 'package:event_hub/features/Home/widgets/search_bar.dart';
+import 'package:event_hub/features/home/widgets/cat_tabs.dart';
+import 'package:event_hub/features/home/widgets/header_row.dart';
+import 'package:event_hub/features/home/widgets/search_bar.dart';
 import 'package:flutter/material.dart' hide SearchBar;
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 

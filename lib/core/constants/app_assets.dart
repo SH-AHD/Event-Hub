@@ -17,22 +17,18 @@ static const String downArrowSvg='assets/icons/down_arrow.svg';
 static const String searchSvg='assets/icons/search.svg';
 static const String drawerMenuSvg='assets/icons/drawer_menu.svg';
 static const String sportsSvg='assets/icons/sports.svg';
-static const String art='assets/icons/art.svg';
-static const String calandar='assets/icons/Calendar.svg';
-static const String locationfilter='assets/icons/LocationFilter.svg';
-static const String slider='assets/icons/Slider.svg';
 
 
-//imgs
-static const String inviteImg='assets/imgs/inviteImg.png';
-static const String joMelanoImg='assets/imgs/jo_melano.png';
-static const String virtualEveningImg='assets/imgs/virtual_evening.png'; 
-static const String womensImg='assets/imgs/womens.png';
-static const String internationalKidsImg='assets/imgs/international_kids.png';
-static const String collectivityImg='assets/imgs/collectivity.png';
-static const String internationalGalaImg='assets/imgs/international_gala.png';
-
-
+  //imgs
+  static const String inviteImg = 'assets/imgs/inviteImg.png';
+  static const String joMelanoImg = 'assets/imgs/jo_melano.png';
+  static const String virtualEveningImg = 'assets/imgs/virtual_evening.png';
+  static const String womensImg = 'assets/imgs/womens.png';
+  static const String internationalKidsImg =
+      'assets/imgs/international_kids.png';
+  static const String collectivityImg = 'assets/imgs/collectivity.png';
+  static const String internationalGalaImg =
+      'assets/imgs/international_gala.png';
 
   //icons
   static const String bellSvg = 'assets/icons/bell.svg';
@@ -54,7 +50,7 @@ static const String internationalGalaImg='assets/imgs/international_gala.png';
   static const String bookmark1Svg = 'assets/icons/bookmark1.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
-  static const String pinPutSvg = 'assets/icons/Profile.png';
+  static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
   //imgs
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';

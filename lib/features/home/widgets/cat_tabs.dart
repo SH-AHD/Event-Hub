@@ -1,6 +1,6 @@
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
-import 'package:event_hub/features/Home/data/category_model.dart';
+import 'package:event_hub/features/home/data/category_model.dart';
 import 'package:flutter/material.dart';
 
 class CatTabs extends StatelessWidget {
