@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(const Duration(seconds: 3),
     () {
       // ignore: use_build_context_synchronously
-      pushReplacementPage(context: context, newScreen: Onboarding());
+      pushReplacementPage(context: context, newScreen: OnboardingScreen());
     }
     );
   }
