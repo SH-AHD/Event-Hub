@@ -240,7 +240,7 @@ class _FilterScreenState extends State<FilterScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SvgPicture.asset(
-                AppAssets.calandar,
+                AppAssets.calendarSvg,
                 // ignore: deprecated_member_use
                 color: AppColors.primaryColor,
               ),

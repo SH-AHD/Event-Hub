@@ -17,8 +17,9 @@ static const String downArrowSvg='assets/icons/down_arrow.svg';
 static const String searchSvg='assets/icons/search.svg';
 static const String drawerMenuSvg='assets/icons/drawer_menu.svg';
 static const String sportsSvg='assets/icons/sports.svg';
-
-
+static const String locationfilter='assets/icons/LocationFilter.svg';
+static const String slider='assets/icons/Slider.svg';
+static const String ellipseInSplash='assets/icons/EllipseInSplash.svg';
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
   static const String joMelanoImg = 'assets/imgs/jo_melano.png';
@@ -29,6 +30,8 @@ static const String sportsSvg='assets/icons/sports.svg';
   static const String collectivityImg = 'assets/imgs/collectivity.png';
   static const String internationalGalaImg =
       'assets/imgs/international_gala.png';
+  static const String ellipseInSplashImg='assets/icons/EllipseInSplash.png';
+
 
   //icons
   static const String bellSvg = 'assets/icons/bell.svg';
