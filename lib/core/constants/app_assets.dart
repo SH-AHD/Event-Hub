@@ -1,23 +1,21 @@
 class AppAssets {
-
-//icons
-static const String logoSvg='assets/icons/logo.svg';
-static const String eventSvg='assets/icons/Calendar.svg';
-static const String exploreSvg='assets/icons/explore.svg';
-static const String profileSvg='assets/icons/Profile.svg';
-static const String mapSvg='assets/icons/Location.svg';
-static const String addSvg='assets/icons/add.svg';
-static const String arrowSvg='assets/icons/arrow.svg';
-static const String saveSvg='assets/icons/save.svg';
-static const String proSvg='assets/icons/pro.svg';
-static const String musicSvg='assets/icons/music.svg';
-static const String foodSvg='assets/icons/food.svg';
-static const String filterSvg='assets/icons/filter.svg';
-static const String downArrowSvg='assets/icons/down_arrow.svg';
-static const String searchSvg='assets/icons/search.svg';
-static const String drawerMenuSvg='assets/icons/drawer_menu.svg';
-static const String sportsSvg='assets/icons/sports.svg';
-
+  //icons
+  static const String logoSvg = 'assets/icons/logo.svg';
+  static const String eventSvg = 'assets/icons/Calendar.svg';
+  static const String exploreSvg = 'assets/icons/explore.svg';
+  static const String profileSvg = 'assets/icons/Profile.svg';
+  static const String mapSvg = 'assets/icons/Location.svg';
+  static const String addSvg = 'assets/icons/add.svg';
+  static const String arrowSvg = 'assets/icons/arrow.svg';
+  static const String saveSvg = 'assets/icons/save.svg';
+  static const String proSvg = 'assets/icons/pro.svg';
+  static const String musicSvg = 'assets/icons/music.svg';
+  static const String foodSvg = 'assets/icons/food.svg';
+  static const String filterSvg = 'assets/icons/filter.svg';
+  static const String downArrowSvg = 'assets/icons/down_arrow.svg';
+  static const String searchSvg = 'assets/icons/search.svg';
+  static const String drawerMenuSvg = 'assets/icons/drawer_menu.svg';
+  static const String sportsSvg = 'assets/icons/sports.svg';
 
   //imgs
   static const String inviteImg = 'assets/imgs/inviteImg.png';
@@ -51,6 +49,8 @@ static const String sportsSvg='assets/icons/sports.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
   static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
+  static const String editProfileSvg = 'assets/icons/editProfile.svg';
+  static const String changeSvg = 'assets/icons/change.svg';
   //imgs
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
@@ -60,4 +60,8 @@ static const String sportsSvg='assets/icons/sports.svg';
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
+  static const String profileImage = 'assets/imgs/profileimage.png';
+  static const String line = 'assets/imgs/line.png';
+  static const String changeButtonBackground =
+      'assets/imgs/changeButtonBackground.png';
 }
