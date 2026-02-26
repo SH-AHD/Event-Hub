@@ -17,7 +17,8 @@ class AppColors {
   static const Color borderColor = Color(0xffE4DFDF);
   static const Color subColor = Color(0xff747688);
   static const Color lightGrayColor = Color(0xff9D9898);
-static Color iconsColor=Color(0xff2C3550).withValues(alpha: 0.4);
-static Color blackColor=Colors.black;
+  static Color iconsColor = Color(0xff2C3550).withValues(alpha: 0.4);
+  static Color blackColor = Colors.black;
   static const Color buttonArrowBackground = Color(0xff3D56F0);
+  static const Color paragraph = Color(0xff3C3E56);
 }
