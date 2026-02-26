@@ -67,4 +67,10 @@ class AppAssets {
   static const String line = 'assets/imgs/line.png';
   static const String changeButtonBackground =
       'assets/imgs/changeButtonBackground.png';
+  static const String daivid = 'assets/imgs/david.png';
+  static const String adnan = 'assets/imgs/adnan.png';
+  static const String clara = 'assets/imgs/clara.png';
+  static const String jennifer = 'assets/imgs/jennifer.png';
+  static const String joan = 'assets/imgs/joan.png';
+  static const String ronald = 'assets/imgs/ronald.png';
 }
