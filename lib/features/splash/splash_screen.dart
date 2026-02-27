@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 5),
+    Future.delayed(const Duration(seconds: 3),
     () {
       // ignore: use_build_context_synchronously
       pushReplacementPage(context: context, newScreen: OnboardingScreen());
@@ -39,12 +39,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
               /// Work BUT Heavy in testing
 
-              // Image.asset(
-              //   AppAssets.splashBg,
-              //   width: double.infinity,
-              //   height: double.infinity,
-              //   fit: BoxFit.cover,
-              // ),
+              Image.asset(
+                AppAssets.splashBg,
+                width: double.infinity,
+                height: double.infinity,
+                fit: BoxFit.cover,
+              ),
       Center(child: SvgPicture.asset(AppAssets.logoSvg))]),
       
     );
