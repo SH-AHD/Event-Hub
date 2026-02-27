@@ -36,9 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: double.infinity,
                 color: AppColors.whiteColor,
               ),
-
-              /// Work BUT Heavy in testing
-
+              
               Image.asset(
                 AppAssets.splashBg,
                 width: double.infinity,
