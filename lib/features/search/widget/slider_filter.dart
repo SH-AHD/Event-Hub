@@ -51,7 +51,6 @@ class RectThumbShape extends SfThumbShape {
       ..strokeWidth = borderWidth
       ..isAntiAlias = true;
 
-    // رسم مستطيل بزوايا دائرية
     canvas.drawRRect(
       RRect.fromRectAndRadius(rect, const Radius.circular(8)),
       fillPaint,
@@ -62,7 +61,6 @@ class RectThumbShape extends SfThumbShape {
       borderPaint,
     );
     
-    // لو فيه child (زي thumbIcon)
     if (child != null) {
       context.paintChild(
         child,

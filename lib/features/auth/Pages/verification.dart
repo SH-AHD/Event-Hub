@@ -1,8 +1,10 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
+import 'package:event_hub/features/home/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
@@ -67,7 +69,9 @@ class _VerificationState extends State<Verification> {
                     ),
                   ],
                 ),
-                child: MainButton(text: 'Continue'),
+                child: MainButton(text: 'Continue' ,onPress: (){
+                  pushAndRemoveUntil(context: context, newScreen: HomeScreen());
+                },),
               ),
             ),
             SizedBox(height: 24),

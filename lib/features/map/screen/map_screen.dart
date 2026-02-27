@@ -18,7 +18,7 @@ class MapScreen extends StatelessWidget {
           Image.asset(
             AppAssets.mapViewImg,
             width: double.infinity,
-            // height: double.infinity,
+            height: double.infinity,
             fit: BoxFit.cover,
           ),
           Positioned(
@@ -32,7 +32,7 @@ class MapScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Container(
-                      // width: 280,
+              
                       decoration: BoxDecoration(
                         color: AppColors.whiteColor,
                         borderRadius: BorderRadius.circular(12),
