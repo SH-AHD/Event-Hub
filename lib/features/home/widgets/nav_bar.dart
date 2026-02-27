@@ -3,12 +3,11 @@ import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
 import 'package:event_hub/features/map/screen/map_screen.dart';
+import 'package:event_hub/features/profile/page/Profile.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
-  const NavBar({
-    super.key,
-  });
+  const NavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,21 +20,18 @@ class NavBar extends StatelessWidget {
           label: "Explore",
           icon: SvgPic(img: AppAssets.exploreSvg),
         ),
-    
+
         BottomNavigationBarItem(
           label: "Events",
           icon: GestureDetector(
             onTap: () {
               // pushPage(context: context, newScreen: EventsScreen());
             },
-            child: SvgPic(
-              img: AppAssets.eventSvg,
-              color: AppColors.iconsColor,
-            ),
+            child: SvgPic(img: AppAssets.eventSvg, color: AppColors.iconsColor),
           ),
         ),
         BottomNavigationBarItem(label: "", icon: Text("")),
-    
+
         BottomNavigationBarItem(
           label: "Map",
           icon: GestureDetector(
@@ -49,7 +45,7 @@ class NavBar extends StatelessWidget {
           label: "Profile",
           icon: GestureDetector(
             onTap: () {
-              // pushPage(context: context, newScreen: ProfileScreen());
+              pushPage(context: context, newScreen: ProfileScreen());
             },
             child: SvgPic(
               img: AppAssets.profileSvg,
