@@ -54,6 +54,10 @@ static const String ellipseInSplash='assets/icons/EllipseInSplash.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
   static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
+  static const String mapFilterSvg = 'assets/icons/MapFilter.svg';
+
+  
+  
   //imgs
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
@@ -63,4 +67,6 @@ static const String ellipseInSplash='assets/icons/EllipseInSplash.svg';
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
+  static const String splashBg = 'assets/imgs/frameBg.png';
+
 }

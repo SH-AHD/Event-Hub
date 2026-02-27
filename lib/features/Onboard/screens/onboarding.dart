@@ -77,7 +77,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   onboardingList[index].description,
                                   textAlign: TextAlign.center,
                                   style: TextStyles.body3.copyWith(
-                                    color: AppColors.whiteColor.withOpacity(
+                                    color: AppColors.whiteColor.withValues( alpha:
                                       0.8,
                                     ),
                                   ),
@@ -98,7 +98,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                           style: TextStyles.title1Eventhub
                                               .copyWith(
                                                 color: AppColors.whiteColor
-                                                    .withOpacity(0.5),
+                                                    .withValues( alpha:0.5),
                                               ),
                                         ),
                                       ),

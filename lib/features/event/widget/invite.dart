@@ -23,7 +23,7 @@ class InviteFriendsSheet extends StatelessWidget {
                 width: 40,
                 height: 5,
                 decoration: BoxDecoration(
-                  color: AppColors.grayColor.withOpacity(0.3),
+                  color: AppColors.grayColor.withValues( alpha: 0.3),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
@@ -50,7 +50,7 @@ class InviteFriendsSheet extends StatelessWidget {
                       borderSide: BorderSide.none,
                     ),
                     filled: true,
-                    fillColor: AppColors.lightGrayColor.withOpacity(0.3),
+                    fillColor: AppColors.lightGrayColor.withValues( alpha:0.3),
                   ),
                 ),
               ),

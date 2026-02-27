@@ -14,10 +14,10 @@ class EventScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
       bottomNavigationBar: BuyTicketButton(),
-      body: Stack(
-        children: [
-          SingleChildScrollView(
-            child: Column(
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const TopBar(img: AppAssets.eventimg),
@@ -35,20 +35,20 @@ class EventScreen extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 20),
-
+            
                       buildInfoRow(
                         AppAssets.calendarevSvg,
                         "14 December, 2021",
                         "Tuesday, 4:00PM - 9:00PM",
                       ),
-
+            
                       const SizedBox(height: 20),
                       buildInfoRow(
                         AppAssets.locationevSvg,
                         "Gala Convention Center",
                         "36 Guild Street London, UK ",
                       ),
-
+            
                       const SizedBox(height: 20),
                       ListTile(
                         contentPadding: EdgeInsets.zero,
@@ -95,8 +95,8 @@ class EventScreen extends StatelessWidget {
                             onPressed: () {},
                             style: TextButton.styleFrom(
                               backgroundColor: AppColors.buttonArrowBackground
-                                  .withOpacity(0.1)
-                                  .withOpacity(0.1),
+                                  .withValues( alpha:0.1)
+                                  .withValues( alpha:0.1),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8),
                               ),
@@ -131,9 +131,9 @@ class EventScreen extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          Positioned(top: 210, left: 20, right: 20, child: InviteCard()),
-        ],
+            Positioned(top: 210, left: 20, right: 20, child: InviteCard()),
+          ],
+        ),
       ),
     );
   }
