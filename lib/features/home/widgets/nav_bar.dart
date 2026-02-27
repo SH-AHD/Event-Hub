@@ -4,6 +4,7 @@ import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
 import 'package:event_hub/features/map/screen/map_screen.dart';
 import 'package:event_hub/features/profile/page/Profile.dart';
+import 'package:event_hub/features/user_events/screen/user_event_screen.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
@@ -25,7 +26,7 @@ class NavBar extends StatelessWidget {
           label: "Events",
           icon: GestureDetector(
             onTap: () {
-              // pushPage(context: context, newScreen: EventsScreen());
+              pushPage(context: context, newScreen: UserEventsScreen());
             },
             child: SvgPic(img: AppAssets.eventSvg, color: AppColors.iconsColor),
           ),

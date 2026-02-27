@@ -36,12 +36,15 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: double.infinity,
                 color: AppColors.whiteColor,
               ),
-              Image.asset(
-                AppAssets.splashBg,
-                width: double.infinity,
-                height: double.infinity,
-                fit: BoxFit.cover,
-              ),
+
+              /// Work BUT Heavy in testing
+
+              // Image.asset(
+              //   AppAssets.splashBg,
+              //   width: double.infinity,
+              //   height: double.infinity,
+              //   fit: BoxFit.cover,
+              // ),
       Center(child: SvgPicture.asset(AppAssets.logoSvg))]),
       
     );

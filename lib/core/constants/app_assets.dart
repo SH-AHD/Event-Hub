@@ -19,19 +19,6 @@ class AppAssets {
   static const String locationfilter = 'assets/icons/LocationFilter.svg';
   static const String slider = 'assets/icons/Slider.svg';
   static const String ellipseInSplash = 'assets/icons/EllipseInSplash.svg';
-  //imgs
-  static const String inviteImg = 'assets/imgs/inviteImg.png';
-  static const String joMelanoImg = 'assets/imgs/jo_melano.png';
-  static const String virtualEveningImg = 'assets/imgs/virtual_evening.png';
-  static const String womensImg = 'assets/imgs/womens.png';
-  static const String internationalKidsImg =
-      'assets/imgs/international_kids.png';
-  static const String collectivityImg = 'assets/imgs/collectivity.png';
-  static const String internationalGalaImg =
-      'assets/imgs/international_gala.png';
-  static const String ellipseInSplashImg = 'assets/icons/EllipseInSplash.png';
-
-  //icons
   static const String bellSvg = 'assets/icons/bell.svg';
   static const String artSvg = 'assets/icons/art.svg';
   static const String bookmarkSvg = 'assets/icons/bookMark.svg';
@@ -55,10 +42,25 @@ class AppAssets {
   static const String editProfileSvg = 'assets/icons/editProfile.svg';
   static const String changeSvg = 'assets/icons/change.svg';
   static const String mapFilterSvg = 'assets/icons/MapFilter.svg';
+static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
+  static const String noNotificationIconSvg = 'assets/icons/noNotificationIcon.svg';
 
   
   
+
+
   //imgs
+  static const String inviteImg = 'assets/imgs/inviteImg.png';
+  static const String joMelanoImg = 'assets/imgs/jo_melano.png';
+  static const String virtualEveningImg = 'assets/imgs/virtual_evening.png';
+  static const String womensImg = 'assets/imgs/womens.png';
+  static const String internationalKidsImg =
+      'assets/imgs/international_kids.png';
+  static const String collectivityImg = 'assets/imgs/collectivity.png';
+  static const String internationalGalaImg =
+      'assets/imgs/international_gala.png';
+  static const String ellipseInSplashImg = 'assets/icons/EllipseInSplash.png';
+
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';

@@ -1,7 +1,5 @@
 import 'dart:io';
 
-import 'package:event_hub/core/constants/app_assets.dart';
-import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/core/styles/themes.dart';
 import 'package:event_hub/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
