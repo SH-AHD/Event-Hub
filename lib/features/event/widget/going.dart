@@ -17,7 +17,7 @@ class InviteCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues( alpha:0.1),
             blurRadius: 10,
             offset: Offset(0, 5),
           ),
@@ -67,7 +67,7 @@ class InviteCard extends StatelessWidget {
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
-                backgroundColor: AppColors.headLineColor.withOpacity(0.5),
+                backgroundColor: AppColors.headLineColor.withValues( alpha:0.5),
                 builder: (context) => const InviteFriendsSheet(),
               );
             },

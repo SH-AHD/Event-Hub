@@ -1,5 +1,7 @@
+import 'dart:io';
+
 import 'package:event_hub/core/styles/themes.dart';
-import 'package:event_hub/features/Onboard/splash_screen.dart';
+import 'package:event_hub/features/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,10 +16,10 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppThemes.lightTheme(),
-      // home:HomeScreen(),
+      builder: (context, child) {
+        return SafeArea(top: false, bottom: Platform.isAndroid, child: child!);
+      },
       home: SplashScreen(),
-
-      //home: ResetPassword(),
     );
   }
 }

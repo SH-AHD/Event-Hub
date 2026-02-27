@@ -11,7 +11,7 @@ class RejectAcceptButtons extends StatelessWidget {
       children: [
         NotificationButton(text: 'Reject', textColor: Color(0xff706D6D)),
         SizedBox(width: 13),
-        NotificationButton(text: 'Accept', backGroundColor: Color(0xff5669FFD)),
+        NotificationButton(text: 'Accept', backGroundColor: Color(0xff5669ffd)),
       ],
     );
   }

@@ -40,17 +40,17 @@ class EventCard extends StatelessWidget {
                 ClipRRect(
                   borderRadius: BorderRadiusGeometry.circular(20),
                   child: CustomImgNetwork(
-                    imgurl: model.imgurl,
+                    imgurl: model.imgurl??'',
                     h: 150,
                     fit: BoxFit.cover,
                   ),
                 ),
-                DateAndSave(day: model.day, mon: model.mon),
+                DateAndSave(day: model.day??'', mon: model.mon??''),
               ],
             ),
             const SizedBox(height: 10),
             Text(
-              model.eventTitle,
+              model.eventTitle??'',
               style: TextStyles.subTitle1.copyWith(
                 color: AppColors.headLineColor,
                 fontWeight: FontWeight.w600,
@@ -77,7 +77,7 @@ class EventCard extends StatelessWidget {
               children: [
                 SvgPic(img: AppAssets.mapSvg, color: AppColors.lightGrayColor),
                 Text(
-                  model.address,
+                  model.address??'',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyles.title3Eventhub.copyWith(
