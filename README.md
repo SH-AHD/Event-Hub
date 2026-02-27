@@ -34,12 +34,17 @@ A modern, minimalist Event Booking Application built with Flutter. This project 
       </tr>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/NotificationScreen.png" width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/EmptyNotification.png" width="200"></td>
-              <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/SignIn.png" width="200"></td>
+       <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/MapScreen.png" width="200"></td>
       </tr>
       <tr>
-        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/MapScreen.png" width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/SearchScreen.png" width="200"></td>
+        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/FilterScreen.png" width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/EventScreen.png" width="200"></td>
+      </tr>
+       <tr>
+         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/SignIn.png" width="200"></td>
+        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/verificationScreen.png" width="200"></td>
+        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/signUp.png" width="200"></td>
       </tr>
     </table>
   </div>
