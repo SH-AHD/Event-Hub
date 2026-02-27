@@ -65,7 +65,7 @@ Meet the team behind **Event Hub**:
 
 | Member | What they built |
 | :--- | :--- |
-| [**Shahd**](https://github.com/SH-AHD) | Home Screen (Zoom Drawer), Map, User Events, Empty Notification, and App Navigation. |
+| [**Shahd Sameh**](https://github.com/SH-AHD) | Home Screen (Zoom Drawer), Map, User Events, Empty Notification, and App Navigation. |
 | [**Moamen Ragab**](https://github.com/moamenragab189) | Auth flow, Notification Screen, and Profile Screen. |
 | [**Mahmoud Abbdelkader**](https://github.com/Mahmoud-Abbdelkader) | Onboarding, Search functionality, and Filter sheets. |
 | [**Mina Maged**](https://github.com/Mantoosw) | Event Details view and Invite/Share sheets. |
