@@ -35,7 +35,7 @@ setState(() {
          ),
          child:Padding(
            padding: const EdgeInsets.all(10),
-           child: saved?  SvgPic(img: AppAssets.saveSvg, height: 10,): SvgPic(img: AppAssets.saveSvg, height: 10,color: AppColors.lightGrayColor,),
+           child: saved?  SvgPic(img: AppAssets.saveSvg, height: 10,): SvgPic(img: AppAssets.saveSvg, height: 10,color: AppColors.whiteColor,),
          ) ),
               ),
     );
