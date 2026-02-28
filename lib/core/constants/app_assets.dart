@@ -16,6 +16,21 @@ class AppAssets {
   static const String searchSvg = 'assets/icons/search.svg';
   static const String drawerMenuSvg = 'assets/icons/drawer_menu.svg';
   static const String sportsSvg = 'assets/icons/sports.svg';
+  static const String selectSvg = 'assets/icons/Select.svg';
+  static const String nonselectSvg = 'assets/icons/No-Select.svg';
+
+  //imgs
+  static const String inviteImg = 'assets/imgs/inviteImg.png';
+  static const String joMelanoImg = 'assets/imgs/jo_melano.png';
+  static const String virtualEveningImg = 'assets/imgs/virtual_evening.png';
+  static const String womensImg = 'assets/imgs/womens.png';
+  static const String internationalKidsImg =
+      'assets/imgs/international_kids.png';
+  static const String collectivityImg = 'assets/imgs/collectivity.png';
+  static const String internationalGalaImg =
+      'assets/imgs/international_gala.png';
+
+  //icons
   static const String locationfilter = 'assets/icons/LocationFilter.svg';
   static const String slider = 'assets/icons/Slider.svg';
   static const String ellipseInSplash = 'assets/icons/EllipseInSplash.svg';
@@ -42,23 +57,12 @@ class AppAssets {
   static const String editProfileSvg = 'assets/icons/editProfile.svg';
   static const String changeSvg = 'assets/icons/change.svg';
   static const String mapFilterSvg = 'assets/icons/MapFilter.svg';
-static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
-  static const String noNotificationIconSvg = 'assets/icons/noNotificationIcon.svg';
-
-  
-  
-
+  static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
+  static const String noNotificationIconSvg =
+      'assets/icons/noNotificationIcon.svg';
 
   //imgs
-  static const String inviteImg = 'assets/imgs/inviteImg.png';
-  static const String joMelanoImg = 'assets/imgs/jo_melano.png';
-  static const String virtualEveningImg = 'assets/imgs/virtual_evening.png';
-  static const String womensImg = 'assets/imgs/womens.png';
-  static const String internationalKidsImg =
-      'assets/imgs/international_kids.png';
-  static const String collectivityImg = 'assets/imgs/collectivity.png';
-  static const String internationalGalaImg =
-      'assets/imgs/international_gala.png';
+
   static const String ellipseInSplashImg = 'assets/icons/EllipseInSplash.png';
 
   static const String mapViewImg = 'assets/imgs/MapView.png';
@@ -80,5 +84,4 @@ static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
   static const String joan = 'assets/imgs/joan.png';
   static const String ronald = 'assets/imgs/ronald.png';
   static const String splashBg = 'assets/imgs/frameBg.png';
-
 }

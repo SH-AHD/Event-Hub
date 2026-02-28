@@ -73,8 +73,8 @@ class InviteCard extends StatelessWidget {
             },
 
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF6366F1),
-              foregroundColor: Colors.white,
+              backgroundColor: AppColors.primaryColor,
+              foregroundColor: AppColors.whiteColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),
               ),

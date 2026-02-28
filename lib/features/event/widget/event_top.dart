@@ -37,7 +37,7 @@ class TopBar extends StatelessWidget {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: AppColors.whiteColor.withValues( alpha:0.2),
+                color: AppColors.whiteColor.withValues(alpha: 0.2),
                 borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
               child: IconButton(
