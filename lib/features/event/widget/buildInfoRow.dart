@@ -8,7 +8,7 @@ Widget buildInfoRow(String assetPath, String title, String subtitle) {
       Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: AppColors.buttonArrowBackground.withOpacity(0.1),
+          color: AppColors.buttonArrowBackground.withValues( alpha:0.1),
           borderRadius: BorderRadius.circular(12),
         ),
         child: SvgPicture.asset(assetPath, width: 25, height: 25),

@@ -31,6 +31,9 @@ class AppAssets {
       'assets/imgs/international_gala.png';
 
   //icons
+  static const String locationfilter = 'assets/icons/LocationFilter.svg';
+  static const String slider = 'assets/icons/Slider.svg';
+  static const String ellipseInSplash = 'assets/icons/EllipseInSplash.svg';
   static const String bellSvg = 'assets/icons/bell.svg';
   static const String artSvg = 'assets/icons/art.svg';
   static const String bookmarkSvg = 'assets/icons/bookMark.svg';
@@ -51,7 +54,17 @@ class AppAssets {
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
   static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
+  static const String editProfileSvg = 'assets/icons/editProfile.svg';
+  static const String changeSvg = 'assets/icons/change.svg';
+  static const String mapFilterSvg = 'assets/icons/MapFilter.svg';
+  static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
+  static const String noNotificationIconSvg =
+      'assets/icons/noNotificationIcon.svg';
+
   //imgs
+
+  static const String ellipseInSplashImg = 'assets/icons/EllipseInSplash.png';
+
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
   static const String evntHubSvg = 'assets/imgs/eventHubSvg.svg';
@@ -60,4 +73,15 @@ class AppAssets {
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
+  static const String profileImage = 'assets/imgs/profileimage.png';
+  static const String line = 'assets/imgs/line.png';
+  static const String changeButtonBackground =
+      'assets/imgs/changeButtonBackground.png';
+  static const String daivid = 'assets/imgs/david.png';
+  static const String adnan = 'assets/imgs/adnan.png';
+  static const String clara = 'assets/imgs/clara.png';
+  static const String jennifer = 'assets/imgs/jennifer.png';
+  static const String joan = 'assets/imgs/joan.png';
+  static const String ronald = 'assets/imgs/ronald.png';
+  static const String splashBg = 'assets/imgs/frameBg.png';
 }

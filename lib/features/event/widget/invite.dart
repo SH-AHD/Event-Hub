@@ -29,7 +29,7 @@ class _InviteFriendsSheetState extends State<InviteFriendsSheet> {
                 width: 40,
                 height: 5,
                 decoration: BoxDecoration(
-                  color: AppColors.grayColor.withOpacity(0.3),
+                  color: AppColors.grayColor.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),

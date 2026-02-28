@@ -1,7 +1,9 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
+import 'package:event_hub/features/search/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatelessWidget {
@@ -13,7 +15,7 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        // pushPage(context: context, newScreen: SearchScreen()),
+        pushPage(context: context, newScreen: SearchScreen());
       },
       child: Padding(
         padding: const EdgeInsets.only(

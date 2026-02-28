@@ -34,7 +34,7 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
             SizedBox(height: 10),
             EventSection(sectionTitle: "Upcoming Events", events: events),
             InviteCard(),
-            EventSection(sectionTitle: "Nearby You", events: events),
+            EventSection(sectionTitle: "Nearby You", events: events.reversed.toList()),
           ],
         ),
       ),
