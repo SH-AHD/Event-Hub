@@ -11,13 +11,13 @@ class InviteCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: EdgeInsets.fromLTRB(5, 6, 5, 6),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(50),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues( alpha:0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 10,
             offset: Offset(0, 5),
           ),
@@ -30,58 +30,52 @@ class InviteCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: 35),
-                child: SizedBox(
-                  height: 32,
-                  child: Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      CirProfilePic1(img: AppNetworkImgs.imgProf1),
-                      Positioned(
-                        left: -20,
-                        child: CirProfilePic1(img: AppNetworkImgs.imgProf2),
-                      ),
-
-                      Positioned(
-                        left: -40,
-                        child: CirProfilePic1(img: AppNetworkImgs.imgProf3),
-                      ),
-                    ],
+              Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  CirProfilePic1(img: AppNetworkImgs.imgProf1),
+                  Positioned(
+                    left: -20,
+                    child: CirProfilePic1(img: AppNetworkImgs.imgProf2),
                   ),
-                ),
+
+                  Positioned(
+                    left: -40,
+                    child: CirProfilePic1(img: AppNetworkImgs.imgProf3),
+                  ),
+                ],
               ),
               const SizedBox(width: 8),
               const Text(
                 "+20 Going",
                 style: TextStyle(
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
                   color: AppColors.primaryColor,
                 ),
               ),
             ],
           ),
-          SizedBox(width: 20),
+          SizedBox(width: 30),
           ElevatedButton(
             onPressed: () {
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
-                backgroundColor: AppColors.headLineColor.withValues( alpha:0.5),
+                backgroundColor: AppColors.headLineColor.withValues(alpha: 0.5),
                 builder: (context) => const InviteFriendsSheet(),
               );
             },
-
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.primaryColor,
               foregroundColor: AppColors.whiteColor,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(15),
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 25),
               elevation: 0,
             ),
-            child: const Text("Invite"),
+            child: const Text("Invite", style: TextStyle(fontSize: 12)),
           ),
         ],
       ),

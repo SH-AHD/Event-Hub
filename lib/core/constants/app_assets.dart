@@ -60,6 +60,8 @@ class AppAssets {
   static const String noEventsIconSvg = 'assets/icons/noEventsIcon.svg';
   static const String noNotificationIconSvg =
       'assets/icons/noNotificationIcon.svg';
+  static const String chatSvg = 'assets/icons/chat.svg';
+  static const String followvSvg = 'assets/icons/follow.svg';
 
   //imgs
 
@@ -84,4 +86,7 @@ class AppAssets {
   static const String joan = 'assets/imgs/joan.png';
   static const String ronald = 'assets/imgs/ronald.png';
   static const String splashBg = 'assets/imgs/frameBg.png';
+  static const String eventimg1 = 'assets/imgs/womens.png';
+  static const String eventimg2 = 'assets/imgs/virtual_evening.png';
+  static const String eventimg3 = 'assets/imgs/jo_melano.png';
 }
