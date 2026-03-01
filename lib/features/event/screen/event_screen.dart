@@ -1,11 +1,13 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/features/artist_profile/screen/profie_artist.dart';
 import 'package:event_hub/features/event/widget/event_top.dart';
 import 'package:event_hub/features/event/widget/going.dart';
 import 'package:event_hub/features/event/widget/buyticketbutton.dart';
 import 'package:event_hub/features/event/widget/buildInfoRow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:share_plus/share_plus.dart';
 
 class EventScreen extends StatelessWidget {
   const EventScreen({super.key});
@@ -65,11 +67,21 @@ class EventScreen extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.all(2.0),
                             child: ClipOval(
-                              child: Container(
-                                color: AppColors.lightGrayColor,
-                                child: SvgPicture.asset(
-                                  AppAssets.artistSvg,
-                                  fit: BoxFit.cover,
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => ProfieArtist(),
+                                    ),
+                                  );
+                                },
+                                child: Container(
+                                  color: AppColors.lightGrayColor,
+                                  child: SvgPicture.asset(
+                                    AppAssets.artistSvg,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -103,7 +115,7 @@ class EventScreen extends StatelessWidget {
                             ),
                             child: const Text(
                               "Follow",
-                              style: TextStyle(color: Color(0xFF5669FF)),
+                              style: TextStyle(color: AppColors.primaryColor),
                             ),
                           ),
                         ),
@@ -125,7 +137,24 @@ class EventScreen extends StatelessWidget {
                           height: 1.5,
                         ),
                       ),
-                      const SizedBox(height: 100),
+                      const SizedBox(height: 10),
+                      TextButton(
+                        onPressed: () {
+                          SharePlus.instance.share(ShareParams(text: 'Link'));
+                        },
+                        style: TextButton.styleFrom(
+                          minimumSize: const Size(double.infinity, 50),
+                          backgroundColor: AppColors.buttonArrowBackground
+                              .withValues(alpha: 0.1),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        child: const Text(
+                          "Share",
+                          style: TextStyle(color: AppColors.primaryColor),
+                        ),
+                      ),
                     ],
                   ),
                 ),
