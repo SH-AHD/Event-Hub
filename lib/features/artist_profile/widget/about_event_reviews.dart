@@ -77,7 +77,7 @@ Widget eventTab() {
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
-                        color: Colors.black,
+                        color: AppColors.headLineColor,
                       ),
                     ),
                   ],
