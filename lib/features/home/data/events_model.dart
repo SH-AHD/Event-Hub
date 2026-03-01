@@ -1,5 +1,4 @@
 import 'package:event_hub/core/constants/app_network_imgs.dart';
-import 'package:flutter/foundation.dart';
 
 class EventsModel {
   final String? id;

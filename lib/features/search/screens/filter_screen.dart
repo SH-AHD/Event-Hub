@@ -23,146 +23,148 @@ class _FilterScreenState extends State<FilterScreen> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(20),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Filter',
-            style: TextStyles.title1ScreensEventhub.copyWith(
-              color: AppColors.titleColor,
-            ),
-          ),
-          SizedBox(height: 20),
-          categore_filter(),
-          SizedBox(height: 20),
-          time_date(context),
-          SizedBox(height: 20),
-          Text(
-            'Location',
-            style: TextStyles.title1Eventhub.copyWith(
-              color: AppColors.titleColor,
-              fontWeight: FontWeight.w400,
-            ),
-          ),
-          SizedBox(height: 12),
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.whiteColor,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Filter',
+              style: TextStyles.title1ScreensEventhub.copyWith(
+                color: AppColors.titleColor,
               ),
-              side: BorderSide(color: AppColors.borderColor),
-              fixedSize: Size(double.infinity, 60),
             ),
-            child: Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: BoxBorder.all(
-                      color: AppColors.borderColor,
-                      width: 7,
+            SizedBox(height: 20),
+            categore_filter(),
+            SizedBox(height: 20),
+            time_date(context),
+            SizedBox(height: 20),
+            Text(
+              'Location',
+              style: TextStyles.title1Eventhub.copyWith(
+                color: AppColors.titleColor,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+            SizedBox(height: 12),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.whiteColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                side: BorderSide(color: AppColors.borderColor),
+                fixedSize: Size(double.infinity, 60),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: BoxBorder.all(
+                        color: AppColors.borderColor,
+                        width: 7,
+                      ),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SvgPicture.asset(AppAssets.locationfilter),
                     ),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: SvgPicture.asset(AppAssets.locationfilter),
+                  SizedBox(width: 18),
+                  Text(
+                    'New Yourk, USA',
+                    style: TextStyles.mainBody.copyWith(
+                      color: AppColors.titleColor,
+                    ),
                   ),
-                ),
-                SizedBox(width: 18),
+                  Spacer(),
+                  Icon(
+                    Icons.arrow_forward_ios_outlined,
+                    color: AppColors.primaryColor,
+                    size: 15,
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 24),
+            Row(
+              children: [
                 Text(
-                  'New Yourk, USA',
-                  style: TextStyles.mainBody.copyWith(
+                  'Select price range',
+                  style: TextStyles.title1Eventhub.copyWith(
                     color: AppColors.titleColor,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
                 Spacer(),
-                Icon(
-                  Icons.arrow_forward_ios_outlined,
-                  color: AppColors.primaryColor,
-                  size: 15,
+                Text(
+                '\$${_values.start.round().toString()} - \$${_values.end.round().toString()}',    style: TextStyles.title1Eventhub.copyWith(
+                    color: AppColors.primaryColor,
+                  ),
                 ),
               ],
             ),
-          ),
-          SizedBox(height: 24),
-          Row(
-            children: [
-              Text(
-                'Select price range',
-                style: TextStyles.title1Eventhub.copyWith(
-                  color: AppColors.titleColor,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-              Spacer(),
-              Text(
-              '\$${_values.start.round().toString()} - \$${_values.end.round().toString()}',    style: TextStyles.title1Eventhub.copyWith(
-                  color: AppColors.primaryColor,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 20),
-          slider(),
-          SizedBox(height: 20),
-          Row(
-            children: [
-              InkWell(
-                onTap: () {
-                  setState(() {
-                    return;
-                  });
-                },
-                child: Container(
-                  height: 58,
-                  width: MediaQuery.of(context).size.width * 0.3,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14),
-                    color: AppColors.whiteColor,
-                    border: BoxBorder.all(color: AppColors.borderColor),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'RESET',
-                      style: TextStyles.button2.copyWith(
-                        color: AppColors.titleColor,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(width: 20),
-              Expanded(
-                child: InkWell(
+            SizedBox(height: 20),
+            slider(),
+            SizedBox(height: 20),
+            Row(
+              children: [
+                InkWell(
                   onTap: () {
-                    setState(() {});
+                    setState(() {
+                      return;
+                    });
                   },
                   child: Container(
                     height: 58,
+                    width: MediaQuery.of(context).size.width * 0.3,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
-                      color: AppColors.primaryColor,
+                      color: AppColors.whiteColor,
                       border: BoxBorder.all(color: AppColors.borderColor),
                     ),
                     child: Center(
                       child: Text(
-                        'APPLY',
+                        'RESET',
                         style: TextStyles.button2.copyWith(
-                          color: AppColors.whiteColor,
+                          color: AppColors.titleColor,
                         ),
                       ),
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          // Gap(45),
-        ],
+                SizedBox(width: 20),
+                Expanded(
+                  child: InkWell(
+                    onTap: () {
+                      setState(() {});
+                    },
+                    child: Container(
+                      height: 58,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(14),
+                        color: AppColors.primaryColor,
+                        border: BoxBorder.all(color: AppColors.borderColor),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'APPLY',
+                          style: TextStyles.button2.copyWith(
+                            color: AppColors.whiteColor,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            // Gap(45),
+          ],
+        ),
       ),
     );
   }
