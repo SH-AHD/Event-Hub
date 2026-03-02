@@ -9,19 +9,21 @@ class CustomPasswordField extends StatefulWidget {
     required this.hint,
     this.radius = 12,
     this.suffix,
+    this.validator,
   });
   final String hint;
   final double radius;
   final String? suffix;
+  final String? Function(String?)? validator;
 
   @override
   State<CustomPasswordField> createState() => _CustomPasswordFieldState();
 }
 
 class _CustomPasswordFieldState extends State<CustomPasswordField> {
+  bool secure = true;
   @override
   Widget build(BuildContext context) {
-    bool secure = true;
     return TextFormField(
       obscureText: secure,
       decoration: InputDecoration(
@@ -32,7 +34,9 @@ class _CustomPasswordFieldState extends State<CustomPasswordField> {
               secure = !secure;
             });
           },
-          child: Image.asset(AppAssets.passwordEye),
+          child: secure == true
+              ? Image.asset(AppAssets.passwordEye)
+              : Icon(Icons.remove_red_eye),
         ),
         hint: Text(
           widget.hint,
@@ -55,6 +59,7 @@ class _CustomPasswordFieldState extends State<CustomPasswordField> {
           borderRadius: BorderRadius.circular(widget.radius),
         ),
       ),
+      validator: widget.validator,
     );
   }
 }
