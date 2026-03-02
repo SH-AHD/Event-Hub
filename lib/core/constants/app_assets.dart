@@ -51,6 +51,8 @@ static const String sportsSvg='assets/icons/sports.svg';
   static const String calendarevSvg = 'assets/icons/CalendarEv.svg';
   static const String locationevSvg = 'assets/icons/LocationEv.svg';
   static const String pinPutSvg = 'assets/icons/pinputSvg.svg';
+  
+
   //imgs
   static const String mapViewImg = 'assets/imgs/MapView.png';
   static const String eventHubImg = 'assets/imgs/EventHubImg.png';
@@ -60,4 +62,18 @@ static const String sportsSvg='assets/icons/sports.svg';
   static const String profilegoing1 = 'assets/imgs/profilegoing1.svg';
   static const String profilegoing2 = 'assets/imgs/profilegoing2.svg';
   static const String profilegoing3 = 'assets/imgs/profilegoing3.svg';
+
+
+
+
+
+
+
+
+
+
+
+  //Icons by mahmoud
+  static const String locationfilterSvg = 'assets/icons/LocationFilter.svg';
+  static const String sliderSvg = 'assets/icons/Slider.svg';
 }

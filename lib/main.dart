@@ -1,6 +1,7 @@
 import 'package:event_hub/core/styles/themes.dart';
 import 'package:event_hub/features/auth/Pages/reset_password.dart';
 import 'package:event_hub/features/auth/Pages/sign_in.dart';
+import 'package:event_hub/features/search/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppThemes.lightTheme(),
       // home:HomeScreen(),
-      home: SignIn(),
+      home: SearchScreen(),
 
       //home: ResetPassword(),
     );

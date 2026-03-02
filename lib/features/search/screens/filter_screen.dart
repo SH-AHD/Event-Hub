@@ -68,7 +68,7 @@ class _FilterScreenState extends State<FilterScreen> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: SvgPicture.asset(AppAssets.locationfilter),
+                    child: SvgPicture.asset(AppAssets.locationfilterSvg),
                   ),
                 ),
                 SizedBox(width: 18),
@@ -185,11 +185,11 @@ class _FilterScreenState extends State<FilterScreen> {
       ),
       endThumbIcon: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
-        child: SvgPicture.asset(AppAssets.slider, width: 16, height: 8),
+        child: SvgPicture.asset(AppAssets.sliderSvg, width: 16, height: 8),
       ),
       startThumbIcon: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
-        child: SvgPicture.asset(AppAssets.slider, width: 16, height: 8),
+        child: SvgPicture.asset(AppAssets.sliderSvg, width: 16, height: 8),
       ),
       // interval: 20,
       // showTicks: true,
@@ -234,13 +234,13 @@ class _FilterScreenState extends State<FilterScreen> {
               borderRadius: BorderRadius.circular(10),
             ),
             side: BorderSide(color: AppColors.borderColor),
-            fixedSize: Size(265, 42),
+            fixedSize: Size(280, 42),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SvgPicture.asset(
-                AppAssets.calandar,
+                AppAssets.calendarevSvg,
                 // ignore: deprecated_member_use
                 color: AppColors.primaryColor,
               ),

@@ -9,11 +9,35 @@ class CategoryModel {
   CategoryModel({required this.category, required this.icon, this.color});
 }
 
- List<CategoryModel> categoriesList = [
-  CategoryModel(category: "Sports", icon: AppAssets.sportsSvg,color: Colors.transparent),
-  CategoryModel(category: "Music", icon: AppAssets.musicSvg,color: Colors.transparent),
-  CategoryModel(category: "Food", icon: AppAssets.foodSvg,color: Colors.transparent),
-  CategoryModel(category: "Food", icon: AppAssets.foodSvg,color: Colors.transparent),
-  CategoryModel(category: "Sports", icon: AppAssets.sportsSvg,color: Colors.transparent),
-  CategoryModel(category: "Art", icon: AppAssets.art,color: Colors.transparent),
+List<CategoryModel> categoriesList = [
+  CategoryModel(
+    category: "Sports",
+    icon: AppAssets.sportsSvg,
+    color: Colors.transparent,
+  ),
+  CategoryModel(
+    category: "Music",
+    icon: AppAssets.musicSvg,
+    color: Colors.transparent,
+  ),
+  CategoryModel(
+    category: "Food",
+    icon: AppAssets.foodSvg,
+    color: Colors.transparent,
+  ),
+  CategoryModel(
+    category: "Food",
+    icon: AppAssets.foodSvg,
+    color: Colors.transparent,
+  ),
+  CategoryModel(
+    category: "Sports",
+    icon: AppAssets.sportsSvg,
+    color: Colors.transparent,
+  ),
+  CategoryModel(
+    category: "Art",
+    icon: AppAssets.artSvg,
+    color: Colors.transparent,
+  ),
 ];
