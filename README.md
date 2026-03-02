@@ -62,6 +62,7 @@ A modern, minimalist Event Booking Application built with Flutter. This project 
     * `syncfusion_flutter_sliders` - For precise range selections (Price, Date, etc.)
     * `shared_preferences` - For local data persistence.
     * `flutter_svg` - To ensure high-quality, scalable vector graphics across all devices.
+    * `readmore` - For elegant "Read more" / "Show less" expandable text handling.
 
 ---
 

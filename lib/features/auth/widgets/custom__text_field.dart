@@ -9,11 +9,13 @@ class CustomTextField extends StatelessWidget {
     required this.hint,
     this.radius = 12,
     this.keyboard,
+    this.validator,
   });
   final String? prefix;
   final String hint;
   final double radius;
   final TextInputType? keyboard;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -41,6 +43,7 @@ class CustomTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(radius),
         ),
       ),
+      validator: validator,
     );
   }
 }
