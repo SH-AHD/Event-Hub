@@ -62,6 +62,7 @@ class AppAssets {
       'assets/icons/noNotificationIcon.svg';
   static const String chatSvg = 'assets/icons/chat.svg';
   static const String followvSvg = 'assets/icons/follow.svg';
+  
 
   //imgs
 
@@ -89,4 +90,18 @@ class AppAssets {
   static const String eventimg1 = 'assets/imgs/womens.png';
   static const String eventimg2 = 'assets/imgs/virtual_evening.png';
   static const String eventimg3 = 'assets/imgs/jo_melano.png';
+
+
+
+
+
+
+
+
+
+
+
+  //Icons by mahmoud
+  static const String locationfilterSvg = 'assets/icons/LocationFilter.svg';
+  static const String sliderSvg = 'assets/icons/Slider.svg';
 }
