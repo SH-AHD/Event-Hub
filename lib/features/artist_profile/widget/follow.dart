@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class FollowButton extends StatefulWidget {
+  const FollowButton({super.key});
+
   @override
   _FollowButtonState createState() => _FollowButtonState();
 }

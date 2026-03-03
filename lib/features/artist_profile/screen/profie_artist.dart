@@ -54,7 +54,7 @@ class _ProfieArtistState extends State<ProfieArtist> {
                 children: [
                   Expanded(child: FollowButton()),
                   const SizedBox(width: 15),
-                  Expanded(child: massages()),
+                  massages(),
                 ],
               ),
             ),
