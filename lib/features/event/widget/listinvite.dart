@@ -11,11 +11,11 @@ class FollowerItem extends StatefulWidget {
   final String followers;
 
   const FollowerItem({
-    Key? key,
+    super.key,
     required this.image,
     required this.name,
     required this.followers,
-  }) : super(key: key);
+  });
 
   @override
   State<FollowerItem> createState() => _FollowerItemState();

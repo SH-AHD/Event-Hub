@@ -14,7 +14,7 @@ class Artist extends StatelessWidget {
         onTap: () {
           print("Image tapped");
         },
-        child: Container(
+        child: SizedBox(
           width: 52,
           height: 52,
           child: Padding(
