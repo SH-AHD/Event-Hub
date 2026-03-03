@@ -43,9 +43,13 @@ A modern, minimalist Event Booking Application built with Flutter. This project 
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/EventScreen.png" width="200"></td>
       </tr>
        <tr>
+        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/AllEventsScreen.png" width="200"></td>
          <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/SignIn.png" width="200"></td>
-        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/verificationScreen.png" width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/signUp.png" width="200"></td>
+      </tr>
+       <tr>
+         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/resetScreen.png" width="200"></td>
+        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/verificationScreen.png" width="200"></td>
       </tr>
     </table>
   </div>
