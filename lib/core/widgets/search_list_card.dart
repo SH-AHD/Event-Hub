@@ -3,10 +3,8 @@ import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/features/home/data/data_model.dart';
 import 'package:flutter/material.dart';
 
-class event_card extends StatelessWidget {
-  const event_card({
-    super.key,
-  });
+class SearchListCard extends StatelessWidget {
+  const SearchListCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,20 +18,30 @@ class event_card extends StatelessWidget {
               color: AppColors.whiteColor,
               child: Row(
                 children: [
-                  Image.asset(event.image??'',width: 79,height: 92,),
-                  SizedBox(width: 14,),
+                  Image.asset(event.image ?? '', width: 79, height: 92),
+                  SizedBox(width: 14),
                   Expanded(
                     child: Column(
-                      
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(event.date??'',style: TextStyles.subTitle2,),
-                        SizedBox(height: 4,),
-                        Text(event.name??'',style: TextStyles.title1Eventhub.copyWith(color: AppColors.titleColor),),
-                        SizedBox(height: 4,),                          ],
+                        Text(
+                          event.date ?? '',
+                          style: TextStyles.subTitle2.copyWith(
+                            color: AppColors.primaryColor,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                        Text(
+                          event.name ?? '',
+                          style: TextStyles.title1Eventhub.copyWith(
+                            color: AppColors.titleColor,
+                          ),
+                        ),
+                        SizedBox(height: 4),
+                      ],
                     ),
-                  )
+                  ),
                 ],
               ),
             );
