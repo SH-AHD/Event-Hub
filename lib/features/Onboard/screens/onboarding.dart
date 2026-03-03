@@ -57,11 +57,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.only(
-                              top: 20,
-                              left: 20,
-                              right: 20,
-                            ),
+                            padding: const EdgeInsets.all(20),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
@@ -84,71 +80,75 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 ),
                                 SizedBox(height: 40),
                                 Expanded(
-                                  child: Row(
+                                  child: Column(mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                      TextButton(
-                                        onPressed: () {
-                                          pushReplacementPage(
-                                            context: context,
-                                            newScreen: SignIn(),
-                                          );
-                                        },
-                                        child: Text(
-                                          'Skip',
-                                          style: TextStyles.title1Eventhub
-                                              .copyWith(
-                                                color: AppColors.whiteColor
-                                                    .withValues( alpha:0.5),
-                                              ),
-                                        ),
-                                      ),
-                                      Spacer(),
                                       Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        mainAxisSize: MainAxisSize.min,
-                                        children: List.generate(
-                                          onboardingList.length,
-                                          (index) => Container(
-                                            margin: EdgeInsets.all(4),
-                                            width: 8,
-                                            height: 8,
-                                            decoration: BoxDecoration(
-                                              color: currentIndex == index
-                                                  ? AppColors.whiteColor
-                                                  : AppColors.lightGrayColor,
-                                              shape: BoxShape.circle,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Spacer(),
-                                      TextButton(
-                                        onPressed: () {
-                                          setState(() {
-                                            if (index !=
-                                                onboardingList.length - 1) {
-                                              controller.nextPage(
-                                                duration: Duration(
-                                                  milliseconds: 400,
-                                                ),
-                                                curve: Curves.easeInOut,
-                                              );
-                                            } else {
+                                        children: [
+                                          TextButton(
+                                            onPressed: () {
                                               pushReplacementPage(
                                                 context: context,
                                                 newScreen: SignIn(),
                                               );
-                                            }
-                                          });
-                                        },
-                                        child: Text(
-                                          'Next',
-                                          style: TextStyles.title1Eventhub
-                                              .copyWith(
-                                                color: AppColors.whiteColor,
+                                            },
+                                            child: Text(
+                                              'Skip',
+                                              style: TextStyles.title1Eventhub
+                                                  .copyWith(
+                                                    color: AppColors.whiteColor
+                                                        .withValues( alpha:0.5),
+                                                  ),
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: List.generate(
+                                              onboardingList.length,
+                                              (index) => Container(
+                                                margin: EdgeInsets.all(4),
+                                                width: 8,
+                                                height: 8,
+                                                decoration: BoxDecoration(
+                                                  color: currentIndex == index
+                                                      ? AppColors.whiteColor
+                                                      : AppColors.lightGrayColor,
+                                                  shape: BoxShape.circle,
+                                                ),
                                               ),
-                                        ),
+                                            ),
+                                          ),
+                                          Spacer(),
+                                          TextButton(
+                                            onPressed: () {
+                                              setState(() {
+                                                if (index !=
+                                                    onboardingList.length - 1) {
+                                                  controller.nextPage(
+                                                    duration: Duration(
+                                                      milliseconds: 400,
+                                                    ),
+                                                    curve: Curves.easeInOut,
+                                                  );
+                                                } else {
+                                                  pushReplacementPage(
+                                                    context: context,
+                                                    newScreen: SignIn(),
+                                                  );
+                                                }
+                                              });
+                                            },
+                                            child: Text(
+                                              'Next',
+                                              style: TextStyles.title1Eventhub
+                                                  .copyWith(
+                                                    color: AppColors.whiteColor,
+                                                  ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ],
                                   ),

@@ -43,6 +43,7 @@ class _SearchScreenState extends State<SearchScreen> {
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide.none,
                       ),
+                      hoverColor: Colors.transparent,
                       hintText: '|Search',
                       hintStyle: TextStyles.title1ScreensEventhub.copyWith(
                         color: AppColors.grayColor,
