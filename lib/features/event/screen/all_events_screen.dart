@@ -1,19 +1,17 @@
 import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/core/styles/text_styles.dart';
-import 'package:event_hub/core/widgets/search_list_card.dart';
-import 'package:event_hub/features/search/screens/filter_screen.dart';
+import 'package:event_hub/features/event/widget/events_list_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SearchScreen extends StatefulWidget {
-  const SearchScreen({super.key});
+class AllEventsScreen extends StatefulWidget {
+  const AllEventsScreen({super.key});
 
   @override
-  State<SearchScreen> createState() => _SearchScreenState();
+  State<AllEventsScreen> createState() => _AllEventsScreenState();
 }
 
-class _SearchScreenState extends State<SearchScreen> {
+class _AllEventsScreenState extends State<AllEventsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,11 +24,15 @@ class _SearchScreenState extends State<SearchScreen> {
             Navigator.pop(context);
           },
         ),
-        title: const Text('Search...'),
+        title: const Text('Events'),
+        actions: [
+          IconButton(onPressed: () {  }, icon:  SvgPicture.asset(AppAssets.searchSvg,color: AppColors.blackColor,)),
+          IconButton(onPressed: () {  }, icon: Icon(Icons.menu))
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
-        child: Column(children: [SearchListCard()]),
+        child: Column(children: [EventsListCard()]),
       ),
     );
   }

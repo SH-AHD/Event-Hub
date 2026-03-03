@@ -16,8 +16,12 @@ class EventsListCard extends StatelessWidget {
           itemBuilder: (context, index) {
             final event = events[index];
             return Container(
+              decoration: BoxDecoration(color: AppColors.whiteColor,
+                
+                //  BoxShadow(color: AppColors.shadowColor, offset: Offset.zero)
+              ),
               height: 100,
-              color: AppColors.whiteColor,
+              
               child: Row(
                 children: [
                   Image.asset(event.image ?? '', width: 79, height: 92),
@@ -29,14 +33,14 @@ class EventsListCard extends StatelessWidget {
                       children: [
                         Text(
                           event.date ?? '',
-                          style: TextStyles.subTitle2.copyWith(
+                          style: TextStyles.subTitle3.copyWith(
                             color: AppColors.primaryColor,
                           ),
                         ),
                         SizedBox(height: 4),
                         Text(
                           event.name ?? '',
-                          style: TextStyles.title1Eventhub.copyWith(
+                          style: TextStyles.title3Eventhub.copyWith(
                             color: AppColors.titleColor,
                           ),
                         ),
@@ -45,11 +49,19 @@ class EventsListCard extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             SvgPicture.asset(
+                              width: 14,
+                              height: 14,
                               AppAssets.locationevSvg,
-                              color: AppColors.secondaryColor,
+                              // ignore: deprecated_member_use
+                              color: AppColors.subColor,
                             ),
-                            SizedBox(width: 6,),
-                            Text(event.location??'',style: TextStyles.subTitle1,)
+                            SizedBox(width: 6),
+                            Text(
+                              event.location ?? '',
+                              style: TextStyles.subTitle3.copyWith(
+                                color: AppColors.subColor,
+                              ),
+                            ),
                           ],
                         ),
                       ],
@@ -60,7 +72,7 @@ class EventsListCard extends StatelessWidget {
             );
           },
           separatorBuilder: (context, index) {
-            return SizedBox(height: 8);
+            return SizedBox(height: 15);
           },
           itemCount: events.length,
         ),

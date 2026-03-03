@@ -20,4 +20,5 @@ class AppColors {
 static Color iconsColor=Color(0xff2C3550).withValues(alpha: 0.4);
 static Color blackColor=Colors.black;
   static const Color buttonArrowBackground = Color(0xff3D56F0);
+  static const Color shadowColor = Color(0xff575C8A);
 }
