@@ -20,6 +20,7 @@ class _AllEventsScreenState extends State<AllEventsScreen> {
     return Scaffold(
       backgroundColor: AppColors.whiteColor,
       appBar: AppBar(
+        scrolledUnderElevation: 0,
         backgroundColor: AppColors.whiteColor,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -33,7 +34,7 @@ class _AllEventsScreenState extends State<AllEventsScreen> {
 pushPage(context: context, newScreen: SearchScreen());
 
           }, icon:  SvgPic(img:AppAssets.searchSvg,color: AppColors.blackColor,)),
-          IconButton(onPressed: () {  }, icon: Icon(Icons.menu))
+          IconButton(onPressed: () {  }, icon: Icon(Icons.more_vert))
         ],
       ),
       body: Padding(
