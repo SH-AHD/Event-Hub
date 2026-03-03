@@ -40,7 +40,7 @@ class _EventsTabBarState extends State<EventsTabBar> {
           ),
         },
         decoration: BoxDecoration(
-          color: AppColors.lightGrayColor.withValues(alpha: 0.1),
+          color: AppColors.lightGrayColor.withValues(alpha: .1),
           borderRadius: BorderRadius.circular(20),
         ),
         thumbDecoration: BoxDecoration(
@@ -49,9 +49,9 @@ class _EventsTabBarState extends State<EventsTabBar> {
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: .3),
-              blurRadius: 4.0,
-              spreadRadius: 1.0,
-              offset: Offset(0.0, 2.0),
+              blurRadius: 4,
+              spreadRadius: 1,
+              offset: Offset(0, 2),
             ),
           ],
         ),
