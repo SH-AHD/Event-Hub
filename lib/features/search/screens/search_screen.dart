@@ -18,7 +18,9 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(backgroundColor: AppColors.whiteColor,
-      appBar: AppBar(backgroundColor: AppColors.whiteColor,
+      appBar: AppBar(
+        scrolledUnderElevation: 0,
+        backgroundColor: AppColors.whiteColor,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -42,9 +44,10 @@ class _SearchScreenState extends State<SearchScreen> {
                         borderRadius: BorderRadius.circular(8),
                         borderSide: BorderSide.none,
                       ),
+                      hoverColor: Colors.transparent,
                       hintText: '|Search',
                       hintStyle: TextStyles.title1ScreensEventhub.copyWith(color: AppColors.grayColor),
-                      prefixIcon: Icon(Icons.search,size: 24,color: AppColors.primaryColor,),
+                      prefixIcon:SvgPic(img: AppAssets.searchSvg,color: AppColors.primaryColor,width: 24,height: 24,)
                     ),
                   ),
                 ),
