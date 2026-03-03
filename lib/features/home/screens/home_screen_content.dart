@@ -1,6 +1,7 @@
+import 'package:event_hub/core/constants/app_assets.dart';
 import 'package:event_hub/core/constants/app_colors.dart';
+import 'package:event_hub/core/widgets/svg_pic.dart';
 import 'package:event_hub/features/home/data/events_model.dart';
-import 'package:event_hub/features/home/widgets/add_event_floating_button.dart';
 import 'package:event_hub/features/home/widgets/event_section.dart';
 import 'package:event_hub/features/home/widgets/header.dart';
 import 'package:event_hub/features/home/widgets/invite_card.dart';
@@ -23,7 +24,7 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
     return Scaffold(
 
       backgroundColor: AppColors.whiteColor,
-      floatingActionButton: AddEventFloatingButton(),
+      floatingActionButton: _addEventFloatingButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
       body: SingleChildScrollView(
@@ -42,4 +43,18 @@ class _HomeScreenContentState extends State<HomeScreenContent> {
       bottomNavigationBar: NavBar(),
     );
   }
+}
+
+
+
+FloatingActionButton _addEventFloatingButton(){
+  return FloatingActionButton(
+      shape: CircleBorder(),
+      backgroundColor: AppColors.primaryColor,
+      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      splashColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      onPressed: () {},
+      child:   SvgPic(img: AppAssets.addSvg),
+    );
 }

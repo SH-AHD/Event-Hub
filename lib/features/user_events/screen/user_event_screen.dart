@@ -1,5 +1,7 @@
+import 'package:event_hub/core/helpers/navigation.dart';
 import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
+import 'package:event_hub/features/event/screen/all_events_screen.dart';
 import 'package:event_hub/features/user_events/widgets/events_tab_bar.dart';
 import 'package:event_hub/features/user_events/widgets/prev.dart';
 import 'package:event_hub/features/user_events/widgets/upcoming.dart';
@@ -47,7 +49,7 @@ SizedBox(height: 40,),
         height: 65,
           child: MainButton(text: "Explore",
                 onPress: (){
-              //  pushPage(context: context, newScreen: SeeAllEventsScreen()) ;
+               pushPage(context: context, newScreen:AllEventsScreen()) ;
                 },),
         ),
       ),

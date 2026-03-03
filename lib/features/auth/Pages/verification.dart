@@ -18,72 +18,90 @@ class Verification extends StatefulWidget {
 class _VerificationState extends State<Verification> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 35),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(height: 20),
-            Text(
-              'Verification',
-              style: TextStyles.h4EventHub.copyWith(
-                fontWeight: FontWeight.w500,
+    return Stack(
+            children: [
+              Container(
+                height: double.infinity,
+                width: double.infinity,
+                color: AppColors.whiteColor,
               ),
-            ),
-            SizedBox(height: 12),
-            Text(
-              'We’ve send you the verification\ncode on +1 2620 0323 7631',
-              style: TextStyles.body2.copyWith(color: AppColors.titleColor),
-            ),
-            SizedBox(height: 26),
-            Pinput(
-              keyboardType: TextInputType.numberWithOptions(),
-              length: 4,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              defaultPinTheme: PinTheme(
-                width: 55,
-                height: 55,
-                textStyle: TextStyles.h4EventHub,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: AppColors.borderColor),
-                  color: AppColors.whiteColor,
+              
+              Image.asset(
+                AppAssets.splashBg,
+                width: double.infinity,
+                height: double.infinity,
+                fit: BoxFit.cover,
+              ),
+        Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: Colors.transparent,),
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 35),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 20),
+                Text(
+                  'Verification',
+                  style: TextStyles.h4EventHub.copyWith(
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
-              ),
-              preFilledWidget: SvgPic(img: AppAssets.pinPutSvg),
-            ),
-            SizedBox(height: 40),
-            Center(
-              child: Container(
-                height: 58,
-                width: 271,
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(0, 10),
-                      blurRadius: 35,
-                      spreadRadius: 0,
-                      color: Color(0xff5669FF).withValues(alpha: 0.25),
+                SizedBox(height: 12),
+                Text(
+                  'We’ve send you the verification\ncode on +1 2620 0323 7631',
+                  style: TextStyles.body2.copyWith(color: AppColors.titleColor),
+                ),
+                SizedBox(height: 26),
+                Pinput(
+                  keyboardType: TextInputType.numberWithOptions(),
+                  length: 4,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  defaultPinTheme: PinTheme(
+                    width: 55,
+                    height: 55,
+                    textStyle: TextStyles.h4EventHub,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: AppColors.borderColor),
+                      color: AppColors.whiteColor,
                     ),
-                  ],
+                  ),
+                  preFilledWidget: SvgPic(img: AppAssets.pinPutSvg),
                 ),
-                child: MainButton(text: 'Continue' ,onPress: (){
-                  pushAndRemoveUntil(context: context, newScreen: HomeScreen());
-                },),
-              ),
+                SizedBox(height: 40),
+                Center(
+                  child: Container(
+                    height: 58,
+                    width: 271,
+                    decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          offset: Offset(0, 10),
+                          blurRadius: 35,
+                          spreadRadius: 0,
+                          color: Color(0xff5669FF).withValues(alpha: 0.25),
+                        ),
+                      ],
+                    ),
+                    child: MainButton(text: 'Continue' ,onPress: (){
+                      pushAndRemoveUntil(context: context, newScreen: HomeScreen());
+                    },),
+                  ),
+                ),
+                SizedBox(height: 24),
+                Center(
+                  child: Text(
+                    'Re-send code in  0:20',
+                    style: TextStyles.body2.copyWith(color: AppColors.titleColor),
+                  ),
+                ),
+              ],
             ),
-            SizedBox(height: 24),
-            Center(
-              child: Text(
-                'Re-send code in  0:20',
-                style: TextStyles.body2.copyWith(color: AppColors.titleColor),
-              ),
-            ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 }
