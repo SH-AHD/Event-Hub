@@ -4,7 +4,6 @@ import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/main_button.dart';
 import 'package:event_hub/features/event/screen/all_events_screen.dart';
 import 'package:event_hub/features/user_events/widgets/events_tab_bar.dart';
-import 'package:event_hub/features/user_events/widgets/prev.dart';
 import 'package:event_hub/features/user_events/widgets/usr_event_body.dart';
 import 'package:flutter/material.dart';
 
