@@ -32,6 +32,7 @@ A modern, minimalist Event Booking Application built with Flutter. This project 
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/pastEvents.png"  width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/upcomingEvents.png"  width="200"></td>
       </tr>
+      <tr>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/NotificationScreen.png" width="200"></td>
         <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/EmptyNotification.png" width="200"></td>
        <td><img src="https://raw.githubusercontent.com/SH-AHD/Event-Hub/main/screenshots/MapScreen.png" width="200"></td>
@@ -62,6 +63,7 @@ A modern, minimalist Event Booking Application built with Flutter. This project 
     * `syncfusion_flutter_sliders` - For precise range selections (Price, Date, etc.)
     * `shared_preferences` - For local data persistence.
     * `flutter_svg` - To ensure high-quality, scalable vector graphics across all devices.
+    * `readmore` - For elegant "Read more" / "Show less" expandable text handling.
 
 ---
 
@@ -72,5 +74,5 @@ Meet the team behind **Event Hub**:
 | :--- | :--- |
 | [**Shahd Sameh**](https://github.com/SH-AHD) | Home Screen (Zoom Drawer), Map, User Events, Empty Notification, and App Navigation. |
 | [**Moamen Ragab**](https://github.com/moamenragab189) | Auth flow, Notification Screen, and Profile Screen. |
-| [**Mahmoud Abbdelkader**](https://github.com/Mahmoud-Abbdelkader) | Onboarding, Search functionality, and Filter sheets. |
-| [**Mina Maged**](https://github.com/Mantoosw) | Event Details view and Invite/Share sheets. |
+| [**Mahmoud Abbdelkader**](https://github.com/Mahmoud-Abbdelkader) | Onboarding, Search functionality, Explore all events, and Filter sheets. |
+| [**Mina Maged**](https://github.com/Mantoosw) | Event Details view, Organizer profile, and Invite/Share sheets. |

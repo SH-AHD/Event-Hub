@@ -21,4 +21,5 @@ class AppColors {
   static Color blackColor = Colors.black;
   static const Color buttonArrowBackground = Color(0xff3D56F0);
   static const Color paragraph = Color(0xff3C3E56);
+  static const Color shadowColor = Color(0xff575C8A);
 }

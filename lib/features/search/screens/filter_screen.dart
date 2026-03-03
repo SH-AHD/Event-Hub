@@ -185,11 +185,11 @@ class _FilterScreenState extends State<FilterScreen> {
       ),
       endThumbIcon: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
-        child: SvgPicture.asset(AppAssets.slider, width: 16, height: 8),
+        child: SvgPicture.asset(AppAssets.sliderSvg, width: 16, height: 8),
       ),
       startThumbIcon: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
-        child: SvgPicture.asset(AppAssets.slider, width: 16, height: 8),
+        child: SvgPicture.asset(AppAssets.sliderSvg, width: 16, height: 8),
       ),
       // interval: 20,
       // showTicks: true,
