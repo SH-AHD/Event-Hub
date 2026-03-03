@@ -5,7 +5,7 @@ import 'package:event_hub/core/styles/text_styles.dart';
 import 'package:event_hub/core/widgets/svg_pic.dart';
 import 'package:event_hub/features/home/data/events_model.dart';
 import 'package:event_hub/features/home/widgets/date_and_save.dart';
-import 'package:event_hub/features/home/widgets/profile_pics.dart';
+import 'package:event_hub/core/widgets/profile_pics.dart';
 import 'package:flutter/material.dart';
 
 class EventCard extends StatelessWidget {

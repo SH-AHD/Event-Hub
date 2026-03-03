@@ -28,45 +28,47 @@ class artistInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: EdgeInsets.zero,
-      leading: Container(
-        width: 52,
-        height: 52,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: AppColors.buttonArrowBackground,
-            width: 2.0,
-          ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(2.0),
-          child: ClipOval(
-            child: InkWell(
+    return InkWell(
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ProfieArtist()),
                 );
               },
-              child: Container(
-                color: AppColors.lightGrayColor,
-                child: SvgPicture.asset(AppAssets.artistSvg, fit: BoxFit.cover),
+      child: ListTile(
+        contentPadding: EdgeInsets.zero,
+        leading: Container(
+          width: 52,
+          height: 52,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(
+              color: AppColors.buttonArrowBackground,
+              width: 2.0,
+            ),
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(2.0),
+            child: ClipOval(
+          
+                child: Container(
+                  color: AppColors.lightGrayColor,
+                  child: SvgPicture.asset(AppAssets.artistSvg, fit: BoxFit.cover),
+                ),
               ),
             ),
           ),
+      
+        title: Text(
+          artistName,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
+        subtitle: const Text(
+          "Artist",
+          style: TextStyle(color: AppColors.grayColor, fontSize: 13),
+        ),
+        trailing: SizedBox(height: 35, child: ButtonFollow()),
       ),
-      title: Text(
-        artistName,
-        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-      ),
-      subtitle: const Text(
-        "Artist",
-        style: TextStyle(color: AppColors.grayColor, fontSize: 13),
-      ),
-      trailing: SizedBox(height: 35, child: ButtonFollow()),
     );
   }
 }
