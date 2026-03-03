@@ -3,7 +3,7 @@ import 'package:event_hub/core/constants/app_colors.dart';
 import 'package:event_hub/features/event/widget/event_details.dart';
 import 'package:event_hub/features/event/widget/event_top.dart';
 import 'package:event_hub/features/event/widget/going.dart';
-import 'package:event_hub/features/event/widget/buyticketbutton.dart';
+import 'package:event_hub/features/event/widget/buy_ticket_button.dart';
 import 'package:flutter/material.dart';
 
 class EventScreen extends StatelessWidget {

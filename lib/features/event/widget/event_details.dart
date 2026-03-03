@@ -1,5 +1,5 @@
 import 'package:event_hub/core/constants/app_assets.dart';
-import 'package:event_hub/features/event/widget/buildInfoRow.dart';
+import 'package:event_hub/features/event/widget/build_Info_Row.dart';
 import 'package:event_hub/features/event/widget/event_info.dart';
 import 'package:event_hub/features/event/widget/share.dart';
 import 'package:flutter/material.dart';

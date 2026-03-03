@@ -1,5 +1,5 @@
 import 'package:event_hub/core/constants/app_colors.dart';
-import 'package:event_hub/features/event/widget/listinvite.dart';
+import 'package:event_hub/features/event/widget/list_invite.dart';
 import 'package:flutter/material.dart';
 
 class InviteFriendsSheet extends StatefulWidget {
